@@ -1,3 +1,42 @@
 h1 {
-    color: green ;
+    color: rgb(71, 26, 26);
+    font-size: x-large;
+    font-style: times;
+}
+tr {
+    padding-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 50px;
+    border-radius: 100px;
+}
+td {
+    border: 1px solid powderblue;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    
+}
+caption {
+    font-size: large;
+}
+body {
+    background-color:rgb(156, 163, 145);
+}
+td:nth-child(even){
+    background-color: rgb(125, 125, 219);
+}
+td:nth-child(odd){
+    background-color: red;
+}
+th:nth-child(even){
+    background-color:purple;
+}
+th:nth-child(odd){
+    background-color: yellow;
+}
+table {
+    width: 100%;
+}
+h1 {
+
 }
