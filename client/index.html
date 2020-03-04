@@ -17,6 +17,51 @@
         <p>
             I'm a big office fan.
         </p>
+        <p>
+            <div class="accordian" id="firstAccordian">
+                <div class="card">
+                    <div class="card-header" id="headingOne">
+                        <button class="btn btn-link" type="button" data-toggle="collapse" data-target="#collapseOne">
+                            Open me
+                        </button>
+                    </div>
+                
+                    <div id="collapseOne" class="collapse" data-parent="#firstAccordian">
+                        <div class="card-body">
+                            Hi
+                        </div>
+                    </div>
+                </div>
+                <div class ="card">
+                    <div class="card-header" id="headingTwo">   
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseTwo">
+                            Open for fun
+                        </button> 
+                    </div>
+                
+                    <div id="collapseTwo" class="collapse" data-parent=#firstAccordian>
+                        <div class="card-body">
+                            Hello
+                        </div>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-header" id="headingThree">
+                        <button class="btn btn-link collapsed" type="button" data-toggle="collapse" data-target="#collapseThree">
+                            Cool things within
+                        </button>
+                    </div>
+                    <div id="collapseThree" class="collapse" data-parent=#firstAccordian>
+                        <div class="card-body">
+                        Hows it going?
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </p>
+ 
+        
+        
         <img src="images/dwightschrute.jpg" alt="Schrute" />
         <table>
             <caption>The Office Characters</caption>
