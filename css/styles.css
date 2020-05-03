@@ -1,36 +1,64 @@
+
 h1 {
-    color: rgb(71, 26, 26);
-    font-size: x-large;
-    font-style: times;
+    position: absolute;
+    width: 154px;
+    height: 45px;
+    left: 64px;
+    top: 20px;
+    
+    font-family: Encode Sans;
+    font-style: normal;
+    font-weight: 900;
+    font-size: 12px;
+    line-height: 15px;
+    
+    color: #FFFFFF;  
 }
-tr {
-    padding-top: 50px;
-    padding-left: 50px;
-    padding-right: 50px;
-    padding-bottom: 50px;
-    border-radius: 100px;
+
+div {
+    position: absolute;
+    width: 676px;
+    height: 56px;
+    left: 0px;
+    top: 0px;
+
+    background: #4B2E83;
 }
-td {
-    border: 1px solid powderblue;
-    color: rgb(0, 0, 0);
+
+h2 {
+    position: absolute;
+    width: 68px;
+    height: 36px;
+    left: 589px;
+    top: 10px;
+    
+    font-family: Encode Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
     text-align: center;
     
+    color: #FFFFFF; 
 }
-caption {
-    font-size: large;
+
+hr {
+    position: absolute;
+    width: 86px;
+    height: 0px;
+    left: 580px;
+    top: 30.5px;
+
+    border: 0.5px solid #FFFFFF;
 }
-body {
-    background-color:greenyellow;
+
+img {
+    position: absolute;
+    width: 56px;
+    height: 37px;
+    left: 0px;
+    top: 10px;
+
+    background: url(W-Logo_White.png);
 }
-td:nth-child(even){
-    background-color: rgb(125, 125, 219);
-}
-td:nth-child(odd){
-    background-color: red;
-}
-th:nth-child(even){
-    background-color:purple;
-}
-th:nth-child(odd){
-    background-color: yellow;
-}
+
