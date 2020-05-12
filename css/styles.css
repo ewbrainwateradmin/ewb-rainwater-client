@@ -61,134 +61,64 @@ img {
 
     background: url(W-Logo_White.png);
 }
-/* The sidebar menu */
+/* The sidebar */
 .sidenav {
-    height: 91.5%; /* Full-height: remove this if you want "auto" height */
-    width: 9.5%; /* Set the width of the sidebar */
+    height: 344x; 
+    width: 148px; 
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    top: 7%; /* Stay at the top */
+    top: 7%; 
     left: 0.4%;
     background-color: #A8C8C7; 
-    /*overflow-x: hidden; /* Disable horizontal scroll */
-    padding-top: 0.5%;
+    padding-top: 0%;
     padding-left: 0%;
     padding-right: 0%;
   }
-  /* The navigation menu links */
-  .sidenav b {
-    padding: 0% 0% 0.5% 0.5%;
-    text-decoration: none;
-    font-size: 25px;
+  /* Regular text that appears on the sidebar */
+  .sidenav p.sidebar-text { 
     color: #111;
-    display: block;
     font-family: Encode Sans;
     font-style: normal;
-    font-size: 90%;
-    line-height: 110%;
+    font-size: 14px;
+    line-height: 17px;
     text-align: center;
-    font-weight: 20;
+    font-weight: normal;
   }
-  .sidenav a {
-    padding: 0% 0% 1% 1%;
+  /* The square the goes around the data */
+  .sidenav div.square {
+    padding: 0% 0% 0% 0%;
     color: #111;
-    display: block;
     text-align: center;
-    margin-top: 5%; 
-    margin-left: 23%;
-    margin-bottom: 5%;
-    height: 7.5%;
-    width: 48%;
+    margin-left: 25%;
+    margin-top: -5%;
+    margin-bottom: -5%;
+    height: 70px;
+    width: 70px;
     border:1px solid #000;
   }
-  .sidenav aa {
+  /* The words that go right under the numbers in the square */
+  .sidenav div.square p.description {
+    font-family: Encode Sans;
+    font-size: 14px;
+    line-height: 110%; /* different from sidebar-text */
+    font-weight: 400;
+    text-align: center;
+    color: #111;
+    margin-top: -5%; /* different from sidebar-text */
+  }
+  /* The numbers inside the data square */
+  .sidenav div.square p.number {
     font-family: Encode Sans;
     font-size: 150%;
     line-height: 110%;
-    font-weight: 600;
+    font-weight: bold;
     text-align: center;
     color: #111;
-    margin-top: 50%; 
+    margin-top: 10%; 
     top: 200px;
     margin-bottom: 10%;
   }
-  .sidenav ab {
-    font-family: Encode Sans;
-    font-size: 90%;
-    line-height: 110%;
-    font-weight: 400;
-    text-align: center;
-    color: #111;
-    margin-top: 10%; 
-    margin-bottom: 10%;
-  }
-  .sidenav c{
-    padding: 0% 0% 1% 1%;
-    font-size: 25px;
-    color: #111;
-    display: block;
-    font-family: Encode Sans;
-    font-style: normal;
-    font-size: 90%;
-    line-height: 110%;
-    text-align: center;
-  }
-  .sidenav d{
-    padding: 0px 0px 1px 1px;
-    color: #111;
-    display: block;
-    font-family: Encode Sans;
-    font-size: 91%;
-    line-height: 110%;
-    text-align: center;
-    margin-top: 10%; 
-    margin-bottom: 5%;
-  }
-  .sidenav e {
-    padding: 0% 0% 1% 1%;
-    text-decoration: none;
-    color: #111;
-    display: block;
-    text-align: center;
-    margin-top: 5%; 
-    margin-left: 23%;
-    margin-bottom: 5%;
-    height: 7.5%;
-    width: 48%;
-    border:1px solid #000;
-  }
-  .sidenav ea {
-    font-family: Encode Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 150%;
-    line-height: 110%;
-    text-align: center;
-    color: #111;
-    margin-top: 20%; 
-    margin-bottom: 10%;
-  }
-  .sidenav eb {
-    font-family: Encode Sans;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 90%;
-    line-height: 110%;
-    text-align: center;
-    color: #111;
-    margin-top: 10%; 
-    margin-bottom: 10%;
-  }
-  .sidenav f{
-    padding: 0% 0% 1% 1%;
-    color: #111;
-    display: block;
-    font-family: Encode Sans;
-    font-size: 90%;
-    line-height: 110%;
-    text-align: center;
-  }
+  /* The line that separates the two facts */
   .sidenav hr{
-    position: absolute;
     border: 0.5px solid #111;
     width: 85%;
     height: 0%;
