@@ -1,4 +1,7 @@
 
+html {
+  background: #E5E5E5;
+}
 h1 {
     position: absolute;
     width: 154px;
@@ -123,4 +126,97 @@ img {
     width: 132px;
     left: 10px;
     top: 165px;
+  }
+
+  .button1 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 173px;
+    top: 77px;
+    
+    background: #31859C;
+    border-radius: 5px;
+  
+  }
+
+  div.button1 p.tapTo {
+    width: 90px;
+    height: 13px;
+    left: 173px;
+    top: 81px;
+
+    font-family: Encode Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+
+    color:#FFFFFF;
+  }
+
+  div.button1 p.benefits {
+    width: 90px;
+    height: 20px;
+    left: 173px;
+    top: 77px;
+
+    font-family: Encode Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  .button2 {
+    position: absolute;
+    width: 90px;
+    height: 90px;
+    left: 304px;
+    top: 77px;
+
+    /* f */
+
+    background: #31859C;
+    border-radius: 5px;
+  }
+
+  div.button2 p.tapTo {
+    width: 90px;
+    height: 13px;
+    left: 304px;
+    top: 81px;
+
+    font-family: Encode Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 11px;
+    line-height: 14px;
+    text-align: center;
+
+    color: #FFFFFF;
+  }
+
+  div.button2 p.system {
+    width: 90px;
+    height: 20px;
+    left: 304px;
+    top: 77px;
+
+    font-family: Encode Sans;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 14px;
+    line-height: 17px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+
+    color: #FFFFFF;
   }
