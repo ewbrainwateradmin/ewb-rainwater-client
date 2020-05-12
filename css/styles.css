@@ -195,5 +195,79 @@ img {
     left: 5%;
     top: 18%;
   }
-
-
+.button3 {
+    height: 90px;
+    width: 90px; 
+    position: absolute; 
+    top: 77px; 
+    left: 435px;
+    background-color: #31859C;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    border-radius: 5px;
+}
+    .button3 b3 {
+        padding: 30% 0% 0% 0%; /*top, right, bottom, left*/
+        font-family: Encode Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+    .button3 tap {
+        position: absolute;
+        width: 90px;
+        height: 13px;
+        left: 0px; /*left and top are relative to the button 3 or 4 general case*/
+        top: 4px;
+        font-family: Encode Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 14px;
+        text-align: center;
+        color: white;
+    }
+.button4 {
+    height: 90px;
+    width: 90px; 
+    position: absolute; 
+    top: 77px; 
+    left: 566px;
+    background-color: #31859C;
+    padding-top: 0%;
+    padding-left: 0%;
+    padding-right: 0%;
+    border-radius: 5px;
+}
+    .button4 b4 {
+        padding: 25% 0% 0% 0%; /*top, right, bottom, left*/
+        font-family: Encode Sans;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 14px;
+        line-height: 17px;
+        display: flex;
+        align-items: center;
+        text-align: center;
+        color: white;
+    }
+    .button4 tap {
+        position: absolute;
+        width: 90px;
+        height: 13px; 
+        left: 0px; /*left and top are relative to the button 3 or 4 general case*/
+        top: 4px;
+        font-family: Encode Sans;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 11px;
+        line-height: 14px;
+        text-align: center;
+        color: white;
+    }
