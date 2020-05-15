@@ -76,228 +76,142 @@ img {
     padding-left: 0%;
     padding-right: 0%;
   }
-  /* Regular text that appears on the sidebar */
-  .sidenav p.sidebar-text { 
-    color: #111;
-    font-family: Encode Sans;
-    font-style: normal;
-    font-size: 14px;
-    line-height: 17px;
-    text-align: center;
-    font-weight: normal;
-  }
-  /* The square the goes around the data */
-  .sidenav div.square {
-    padding: 0% 0% 0% 0%;
-    color: #111;
-    text-align: center;
-    margin-left: 25%;
-    margin-top: -5%;
-    margin-bottom: -5%;
-    height: 70px;
-    width: 70px;
-    border:1px solid #000;
-  }
-  /* The words that go right under the numbers in the square */
-  .sidenav div.square p.description {
-    font-family: Encode Sans;
-    font-size: 14px;
-    line-height: 110%; /* different from sidebar-text */
-    font-weight: 400;
-    text-align: center;
-    color: #111;
-    margin-top: -5%; /* different from sidebar-text */
-  }
-  /* The numbers inside the data square */
-  .sidenav div.square p.number {
-    font-family: Encode Sans;
-    font-size: 150%;
-    line-height: 110%;
-    font-weight: bold;
-    text-align: center;
-    color: #111;
-    margin-top: 10%; 
-    top: 200px;
-    margin-bottom: 10%;
-  }
-  /* The line that separates the two facts */
-  .sidenav hr{
-    border: 0.5px solid #111;
-    width: 132px;
-    left: 10px;
-    top: 165px;
-  }
-
-  .button1 {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    left: 173px;
-    top: 77px;
-    
-    background: #31859C;
-    border-radius: 5px;
-  
-  }
-
-  div.button1 p.tapTo {
-    width: 90px;
-    height: 13px;
-    left: 173px;
-    top: 81px;
-
-    font-family: Encode Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 14px;
-    text-align: center;
-
-    color:#FFFFFF;
-  }
-
-  div.button1 p.benefits {
-    width: 90px;
-    height: 20px;
-    left: 173px;
-    top: 77px;
-
-    font-family: Encode Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-  }
-
-  .button2 {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    left: 304px;
-    top: 77px;
-
-    /* f */
-
-    background: #31859C;
-    border-radius: 5px;
-  }
-
-  div.button2 p.tapTo {
-    width: 90px;
-    height: 13px;
-    left: 304px;
-    top: 81px;
-
-    font-family: Encode Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 11px;
-    line-height: 14px;
-    text-align: center;
-
-    color: #FFFFFF;
-  }
-
-  div.button2 p.system {
-    width: 90px;
-    height: 20px;
-    left: 304px;
-    top: 77px;
-
-    font-family: Encode Sans;
-    font-style: normal;
-    font-weight: 600;
-    font-size: 14px;
-    line-height: 17px;
-    display: flex;
-    align-items: center;
-    text-align: center;
-
-    color: #FFFFFF;
-  }
-    width: 85%;
-    height: 0%;
-    left: 5%;
-    top: 18%;
-  }
-.button3 {
-    height: 90px;
-    width: 90px; 
-    position: absolute; 
-    top: 77px; 
-    left: 435px;
-    background-color: #31859C;
-    padding-top: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-    border-radius: 5px;
+/* Regular text that appears on the sidebar */
+.sidenav p.sidebar-text { 
+  color: #111;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+  font-weight: normal;
 }
-    .button3 b3 {
-        padding: 30% 0% 0% 0%; /*top, right, bottom, left*/
-        font-family: Encode Sans;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: white;
-    }
-    .button3 tap {
-        position: absolute;
-        width: 90px;
-        height: 13px;
-        left: 0px; /*left and top are relative to the button 3 or 4 general case*/
-        top: 4px;
-        font-family: Encode Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 11px;
-        line-height: 14px;
-        text-align: center;
-        color: white;
-    }
-.button4 {
-    height: 90px;
-    width: 90px; 
-    position: absolute; 
-    top: 77px; 
-    left: 566px;
-    background-color: #31859C;
-    padding-top: 0%;
-    padding-left: 0%;
-    padding-right: 0%;
-    border-radius: 5px;
+/* The square the goes around the data */
+.sidenav div.square {
+  padding: 0% 0% 0% 0%;
+  color: #111;
+  text-align: center;
+  margin-left: 25%;
+  margin-top: -5%;
+  margin-bottom: -5%;
+  height: 70px;
+  width: 70px;
+  border:1px solid #000;
 }
-    .button4 b4 {
-        padding: 25% 0% 0% 0%; /*top, right, bottom, left*/
-        font-family: Encode Sans;
-        font-style: normal;
-        font-weight: 600;
-        font-size: 14px;
-        line-height: 17px;
-        display: flex;
-        align-items: center;
-        text-align: center;
-        color: white;
-    }
-    .button4 tap {
-        position: absolute;
-        width: 90px;
-        height: 13px; 
-        left: 0px; /*left and top are relative to the button 3 or 4 general case*/
-        top: 4px;
-        font-family: Encode Sans;
-        font-style: normal;
-        font-weight: normal;
-        font-size: 11px;
-        line-height: 14px;
-        text-align: center;
-        color: white;
-    }
+/* The words that go right under the numbers in the square */
+.sidenav div.square p.description {
+  font-family: Encode Sans;
+  font-size: 14px;
+  line-height: 110%; /* different from sidebar-text */
+  font-weight: 400;
+  text-align: center;
+  color: #111;
+  margin-top: -5%; /* different from sidebar-text */
+}
+/* The numbers inside the data square */
+.sidenav div.square p.number {
+  font-family: Encode Sans;
+  font-size: 150%;
+  line-height: 110%;
+  font-weight: bold;
+  text-align: center;
+  color: #111;
+  margin-top: 10%; 
+  top: 200px;
+  margin-bottom: 10%;
+}
+/* The line that separates the two facts */
+.sidenav hr{
+  border: 0.5px solid #111;
+  width: 132px;
+  left: 10px;
+  top: 165px;
+}
+
+/*buttons:*/
+button div.button1 {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  background: #31859C;
+  border-radius: 5px;
+  left: 173px;
+  top: 77px;
+}
+
+button div.button2 {
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 304px;
+  top: 77px;
+  background: #31859C;
+  border-radius: 5px;
+}
+
+button div.button3 {
+  height: 90px;
+  width: 90px; 
+  position: absolute; 
+  top: 77px; 
+  left: 435px;
+  background-color: #31859C;
+  border-radius: 5px;
+}
+
+button div.button4 {
+  height: 90px;
+  width: 90px; 
+  position: absolute; 
+  top: 77px; 
+  left: 566px;
+  background-color: #31859C;
+  border-radius: 5px;
+}
+
+/*the words "tap to" on the button*/
+button p.tapTo {
+  width: 90px;
+  height: 16px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+  text-align: center;
+  color:#FFFFFF;
+}
+
+/*the description on the button*/
+button p.description {
+  width: 90px;
+  height: 20px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #FFFFFF;
+}
+
+/*make the buttons change state when you hover over*/
+div.button1:hover, div.button1:focus, div.button1:active, div.button2:hover, div.button2:focus, div.button2:active, 
+div.button3:hover, div.button3:focus, div.button3:active, div.button4:hover, div.button4:focus, div.button4:active {
+  background: #ECECEC;
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 5px;    
+  cursor: pointer; /* displays a hand */
+  /*font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #31859C;*/
+}

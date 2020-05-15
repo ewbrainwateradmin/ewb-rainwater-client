@@ -6,6 +6,7 @@
         <link rel="stylesheet" href="css/styles.css">
         <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
     </head>
+    <!--Header:-->
     <header>
         <div class = "header">
         </div>
@@ -14,6 +15,7 @@
         <hr>
         <img src="images/W-Logo_White.png" alt="Logo">
     </header>
+    <!--Navigation Bar:-->
     <div class="sidenav">
         <p class="sidebar-text">This building operates using rainwater.</p>
         <div class="square">
@@ -28,30 +30,48 @@
             <p class="description">water bottles</p>
         </div>
         <p class="sidebar-text">saved this month.</p>
-      </div>
-    <div class="button1">
-        <p class="tapTo">
-            tap to
-        
-         <p class="benefits">
-            learn about the benefits
-        
-        </p>
     </div>
-    <div class="button2">
-        <p class="tapTo">
-            tap to
-        <p class="system">
-            explore the rainwater system
-        </p>
-    </div>
-    <div class="button3">
-        <tap>tap to</tap>
-        <b3>explore the rain cycle</b3>
-    </div>
-    <div class="button4">
-        <tap>tap to</tap>
-        <b4>play the rainwater game</b4>
-    </div>
+    <!--Buttons:-->
+    <button onclick="showAlertButton1()">
+        <div class="button1">
+            <p class="tapTo">tap to</p>
+            <p class="description">learn about the benefits</p>
+        </div>
+    </button>
+    <button onclick="showAlertButton2()">
+        <div class="button2">
+            <p class="tapTo">tap to</p>
+            <p class="description">explore the rainwater system</p>
+        </div>
+    </button>
+    <button onclick="showAlertButton3()">
+        <div class="button3">
+            <p class="tapTo">tap to</p>
+            <p class="description">explore the rain cycle</p>
+        </div>
+    </button>
+    <button onclick="showAlertButton4()">
+        <div class="button4">
+            <p class="tapTo">tap to</p>
+            <p class="description">play the rainwater game</p>
+        </div>
+    </button>
+    
+    <script src="js/index.js"></script>
+    <!--The javascript file doesn't work so I put the code here for now-->
+    <script>
+        function showAlertButton1() {
+          alert ("you clicked on button1!")
+        }
+        function showAlertButton2() {
+          alert ("you clicked on button2!")
+        }
+        function showAlertButton3() {
+          alert ("you clicked on button3!")
+        }
+        function showAlertButton4() {
+          alert ("you clicked on button4!")
+        }
+    </script>
 
 </html>
