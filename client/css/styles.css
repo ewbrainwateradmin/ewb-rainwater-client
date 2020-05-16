@@ -148,6 +148,7 @@ button div.button2 {
   background: #31859C;
   border-radius: 5px;
 }
+<<<<<<< HEAD:css/styles.css
 
 button div.button3 {
   height: 90px;
@@ -157,6 +158,10 @@ button div.button3 {
   left: 435px;
   background-color: #31859C;
   border-radius: 5px;
+=======
+body {
+    background-color:rgb(156, 163, 145);
+>>>>>>> 0f9257085c521e5d636e9beee03345f247450622:client/css/styles.css
 }
 
 button div.button4 {
@@ -196,6 +201,7 @@ button p.description {
   text-align: center;
   color: #FFFFFF;
 }
+<<<<<<< HEAD:css/styles.css
 
 /*make the buttons change state when you hover over*/
 div.button1:hover, div.button1:focus, div.button1:active, div.button2:hover, div.button2:focus, div.button2:active, 
@@ -215,3 +221,14 @@ div.button3:hover, div.button3:focus, div.button3:active, div.button4:hover, div
   text-align: center;
   color: #31859C;*/
 }
+=======
+th:nth-child(odd){
+    background-color: yellow;
+}
+table {
+    width: 100%;
+}
+h1 {
+
+}
+>>>>>>> 0f9257085c521e5d636e9beee03345f247450622:client/css/styles.css
