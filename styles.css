@@ -12,3 +12,13 @@ td {
   border: maroon 5px solid;
   padding: 1em;
 }
+
+.button {
+  border: maroon 5px solid;
+  background-color: bisque;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
