@@ -69,8 +69,8 @@ img {
     height: 344x; 
     width: 148px; 
     position: fixed; /* Fixed Sidebar (stay in place on scroll) */
-    top: 7%; 
-    left: 0.4%;
+    top: 61px; 
+    left: 5px;
     background-color: #A8C8C7; 
     padding-top: 0%;
     padding-left: 0%;
@@ -129,7 +129,7 @@ img {
 }
 
 /*buttons:*/
-button div.button1 {
+.buttons button div.button1 {
   position: absolute;
   width: 90px;
   height: 90px;
@@ -139,7 +139,7 @@ button div.button1 {
   top: 77px;
 }
 
-button div.button2 {
+.buttons button div.button2 {
   position: absolute;
   width: 90px;
   height: 90px;
@@ -149,7 +149,7 @@ button div.button2 {
   border-radius: 5px;
 }
 
-button div.button3 {
+.buttons button div.button3 {
   height: 90px;
   width: 90px; 
   position: absolute; 
@@ -159,7 +159,7 @@ button div.button3 {
   border-radius: 5px;
 }
 
-button div.button4 {
+.buttons button div.button4 {
   height: 90px;
   width: 90px; 
   position: absolute; 
@@ -170,7 +170,7 @@ button div.button4 {
 }
 
 /*the words "tap to" on the button*/
-button p.tapTo {
+.buttons button p.tapTo {
   width: 90px;
   height: 16px;
   font-family: Encode Sans;
@@ -183,7 +183,7 @@ button p.tapTo {
 }
 
 /*the description on the button*/
-button p.description {
+div.buttons button p.description {
   width: 90px;
   height: 20px;
   font-family: Encode Sans;
@@ -198,20 +198,14 @@ button p.description {
 }
 
 /*make the buttons change state when you hover over*/
-div.button1:hover, div.button1:focus, div.button1:active, div.button2:hover, div.button2:focus, div.button2:active, 
-div.button3:hover, div.button3:focus, div.button3:active, div.button4:hover, div.button4:focus, div.button4:active {
-  background: #ECECEC;
+div.buttons div.button1:hover, div.buttons div.button2:hover, div.buttons div.button3:hover, div.buttons div.button4:hover{
+  background-color: #ECECEC;
   border: 1px solid #31859C;
   box-sizing: border-box;
   border-radius: 5px;    
-  cursor: pointer; /* displays a hand */
-  /*font-family: Encode Sans;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
-  display: flex;
-  align-items: center;
-  text-align: center;
-  color: #31859C;*/
+  cursor: pointer; 
+}
+
+div.buttons button p.description:hover, div.buttons button p.tapTo:hover {
+  color: #31859C;
 }

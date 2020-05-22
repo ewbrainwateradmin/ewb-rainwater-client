@@ -4,6 +4,7 @@
         <meta charset="utf-8">
         <title>Hans Rosling Center for Population Health</title>
         <link rel="stylesheet" href="css/styles.css">
+        <script src="./js/index.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
     </head>
     <!--Header:-->
@@ -32,46 +33,31 @@
         <p class="sidebar-text">saved this month.</p>
     </div>
     <!--Buttons:-->
-    <button onclick="showAlertButton1()">
-        <div class="button1">
-            <p class="tapTo">tap to</p>
-            <p class="description">learn about the benefits</p>
-        </div>
-    </button>
-    <button onclick="showAlertButton2()">
-        <div class="button2">
-            <p class="tapTo">tap to</p>
-            <p class="description">explore the rainwater system</p>
-        </div>
-    </button>
-    <button onclick="showAlertButton3()">
-        <div class="button3">
-            <p class="tapTo">tap to</p>
-            <p class="description">explore the rain cycle</p>
-        </div>
-    </button>
-    <button onclick="showAlertButton4()">
-        <div class="button4">
-            <p class="tapTo">tap to</p>
-            <p class="description">play the rainwater game</p>
-        </div>
-    </button>
+    <div class="buttons">
+        <button onclick="showAlertButton(1)">
+            <div class="button1">
+                <p class="tapTo">tap to</p>
+                <p class="description">learn about the benefits</p>
+            </div>
+        </button>
+        <button onclick="showAlertButton(2)">
+            <div class="button2">
+                <p class="tapTo">tap to</p>
+                <p class="description">explore the rainwater system</p>
+            </div>
+        </button>
+        <button onclick="showAlertButton(3)">
+            <div class="button3">
+                <p class="tapTo">tap to</p>
+                <p class="description">explore the rain cycle</p>
+            </div>
+        </button>
+        <button onclick="showAlertButton(4)">
+            <div class="button4">
+                <p class="tapTo">tap to</p>
+                <p class="description">play the rainwater game</p>
+            </div>
+        </button>
+    </div>
     
-    <script src="js/index.js"></script>
-    <!--The javascript file doesn't work so I put the code here for now-->
-    <script>
-        function showAlertButton1() {
-          alert ("you clicked on button1!")
-        }
-        function showAlertButton2() {
-          alert ("you clicked on button2!")
-        }
-        function showAlertButton3() {
-          alert ("you clicked on button3!")
-        }
-        function showAlertButton4() {
-          alert ("you clicked on button4!")
-        }
-    </script>
-
 </html>
