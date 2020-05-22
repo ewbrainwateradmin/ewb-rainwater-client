@@ -1,3 +1,2 @@
-function showAlertButton(number) {
-  alert ("you clicked on button" + number)
-}
+// Initialise an instance of our router class.
+const router = new Router(routes);

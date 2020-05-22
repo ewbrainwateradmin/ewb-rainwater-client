@@ -4,7 +4,11 @@
         <meta charset="utf-8">
         <title>Hans Rosling Center for Population Health</title>
         <link rel="stylesheet" href="css/styles.css">
-        <script src="./js/index.js"></script>
+        <script src="../js/router.js"></script>
+        <script src="../js/routes.js"></script>
+        <script src="../js/index.js"></script>
+        <script src="src/index.js"></script>
+        <div data-router-outlet></div>
         <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
     </head>
     <!--Header:-->
@@ -17,47 +21,48 @@
         <img src="images/W-Logo_White.png" alt="Logo">
     </header>
     <!--Navigation Bar:-->
-    <div class="sidenav">
-        <p class="sidebar-text">This building operates using rainwater.</p>
-        <div class="square">
-            <p class="number">77</p>
-            <p class="description">gallons</p>
+    <body>
+        <div class="sidenav">
+            <p class="sidebar-text">This building operates using rainwater.</p>
+            <div class="square">
+                <p class="number">77</p>
+                <p class="description">gallons</p>
+            </div>
+            <p class="sidebar-text">of water have been saved this month.</p>
+            <hr>
+            <p class="sidebar-text">That is the equivalent of</p>
+            <div class="square">
+                <p class="number">582</p>
+                <p class="description">water bottles</p>
+            </div>
+            <p class="sidebar-text">saved this month.</p>
         </div>
-        <p class="sidebar-text">of water have been saved this month.</p>
-        <hr>
-        <p class="sidebar-text">That is the equivalent of</p>
-        <div class="square">
-            <p class="number">582</p>
-            <p class="description">water bottles</p>
+        <!--Buttons:-->
+        <div class="buttons">
+            <li><button onclick="router.loadRoute('benefits')">
+                <div class="button1">
+                    <p class="tapTo">tap to</p>
+                    <p class="description">learn about the benefits</p>
+                </div>
+            </button></li>
+            <li><button onclick="router.loadRoute('rainwaterSystem')">
+                <div class="button2">
+                    <p class="tapTo">tap to</p>
+                    <p class="description">explore the rainwater system</p>
+                </div>
+            </button></li>
+            <li><button onclick="router.loadRoute('rainCycle')">
+                <div class="button3">
+                    <p class="tapTo">tap to</p>
+                    <p class="description">explore the rain cycle</p>
+                </div>
+            </button></li>
+            <li><button onclick="router.loadRoute('rainwaterGame')">
+                <div class="button4">
+                    <p class="tapTo">tap to</p>
+                    <p class="description">play the rainwater game</p>
+                </div>
+            </button></li>
         </div>
-        <p class="sidebar-text">saved this month.</p>
-    </div>
-    <!--Buttons:-->
-    <div class="buttons">
-        <button onclick="showAlertButton(1)">
-            <div class="button1">
-                <p class="tapTo">tap to</p>
-                <p class="description">learn about the benefits</p>
-            </div>
-        </button>
-        <button onclick="showAlertButton(2)">
-            <div class="button2">
-                <p class="tapTo">tap to</p>
-                <p class="description">explore the rainwater system</p>
-            </div>
-        </button>
-        <button onclick="showAlertButton(3)">
-            <div class="button3">
-                <p class="tapTo">tap to</p>
-                <p class="description">explore the rain cycle</p>
-            </div>
-        </button>
-        <button onclick="showAlertButton(4)">
-            <div class="button4">
-                <p class="tapTo">tap to</p>
-                <p class="description">play the rainwater game</p>
-            </div>
-        </button>
-    </div>
-    
+    </body>
 </html>

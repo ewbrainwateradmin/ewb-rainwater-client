@@ -209,3 +209,7 @@ div.buttons div.button1:hover, div.buttons div.button2:hover, div.buttons div.bu
 div.buttons button p.description:hover, div.buttons button p.tapTo:hover {
   color: #31859C;
 }
+
+body {
+  font-family: sans-serif;
+}
