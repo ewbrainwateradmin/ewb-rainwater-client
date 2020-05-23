@@ -4,11 +4,7 @@
         <meta charset="utf-8">
         <title>Hans Rosling Center for Population Health</title>
         <link rel="stylesheet" href="css/styles.css">
-        <script src="../js/router.js"></script>
-        <script src="../js/routes.js"></script>
-        <script src="../js/index.js"></script>
         <script src="src/index.js"></script>
-        <div data-router-outlet></div>
         <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
     </head>
     <!--Header:-->
@@ -22,6 +18,7 @@
     </header>
     <!--Navigation Bar:-->
     <body>
+        
         <div class="sidenav">
             <p class="sidebar-text">This building operates using rainwater.</p>
             <div class="square">
@@ -45,6 +42,7 @@
                     <p class="description">learn about the benefits</p>
                 </div>
             </button></li>
+            
             <li><button onclick="router.loadRoute('rainwaterSystem')">
                 <div class="button2">
                     <p class="tapTo">tap to</p>
@@ -64,5 +62,9 @@
                 </div>
             </button></li>
         </div>
+        <div data-router-outlet></div>
+        <script src="../js/router.js"></script>
+        <script src="../js/routes.js"></script>
+        <script src="../js/index.js"></script>
     </body>
 </html>
