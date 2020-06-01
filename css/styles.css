@@ -210,6 +210,10 @@ div.buttons button p.description:hover, div.buttons button p.tapTo:hover {
   color: #31859C;
 }
 
-body {
+/*text for dummy routing pages*/
+div.text p.dummy-text{
   font-family: sans-serif;
+  font-size: 20px;
+  margin-top: 200px;
+  margin-left: 200px;
 }

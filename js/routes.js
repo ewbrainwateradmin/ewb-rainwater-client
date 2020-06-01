@@ -1,22 +1,27 @@
 const routes = [
   {
+    // Home page:
     path: '/',
-    template: '<h1></h1>'
+    template: '',
   },
   {
+    // Tap to learn about the benefits:
     path: '/benefits',
-    template: '<h1></h1>',
+    template: '<div class="text"><p class="dummy-text">Page for Benefits</p></div>',
   },
   {
+    // Tap to learn about the rainwater system:
     path: '/rainwaterSystem',
-    template: '<h1></h1>',
+    template: '<div class="text"><p class="dummy-text">Page for Rainwater System</p></div>',
   },
   {
+    // Tap to learn about the rain cycle:
     path: '/rainCycle',
-    template: '<h1></h1>',
+    template: '<div class="text"><p class="dummy-text">Page for Rain Cycle</p></div>',
   },
   {
+    // Tap to play the rainwater game:
     path: '/rainwaterGame',
-    template: '<h1></h1>',
+    template: '<div class="text"><p class="dummy-text">Page for Rainwater Game</p></div>',
   },
 ];
