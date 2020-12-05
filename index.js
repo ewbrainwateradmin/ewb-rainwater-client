@@ -4,7 +4,7 @@ const path = require('path');
 const app = express();
 
 // Set static folder
-// for static server, routes end in .html (ie http://localhost:80/home.html)
+// for static server, routes end in .html (ie http://localhost:5500/home.html)
 app.use(express.static(path.join(__dirname, 'static')));
 
 // set up main page
