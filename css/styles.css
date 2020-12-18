@@ -1,6 +1,7 @@
 
 html {
   background: #E5E5E5;
+  zoom: 2.634146341;
 }
 h1 {
     position: absolute;
@@ -20,7 +21,8 @@ h1 {
 
 .header {
     position: absolute;
-    width: 676px;
+    /*width: 676px;*/
+    width: 728.9px;
     height: 56px;
     left: 0px;
     top: 0px;
@@ -32,7 +34,8 @@ h2 {
     position: absolute;
     width: 68px;
     height: 36px;
-    left: 589px;
+    /*left: 589px;*/
+    left: 635.1px;
     top: 10px;
     
     font-family: Encode Sans;
@@ -49,7 +52,8 @@ hr {
     position: absolute;
     width: 86px;
     height: 0px;
-    left: 580px;
+    /*left: 580px;*/
+    left: 625.4px;
     top: 30.5px;
 
     border: 0.5px solid #FFFFFF;
@@ -66,15 +70,15 @@ hr {
 }
 /* The sidebar */
 .sidenav {
-    height: 344x; 
-    width: 148px; 
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    height: 344px;
+    width: 149px; 
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
     top: 61px; 
     left: 5px;
     background-color: #A8C8C7; 
-    padding-top: 0%;
+    /*padding-top: 0%;
     padding-left: 0%;
-    padding-right: 0%;
+    padding-right: 0%;*/
   }
 /* Regular text that appears on the sidebar */
 .sidenav p.sidebar-text { 
@@ -229,6 +233,7 @@ div.text p.dummy-text{
   border: 1px solid #31859C;
   box-sizing: border-box;
   border-radius: 17px;
+  outline:none;
 }
 
 #waterDemand{
@@ -241,6 +246,7 @@ div.text p.dummy-text{
   border: 1px solid #31859C;
   box-sizing: border-box;
   border-radius: 17px;
+  outline:none;
 }
 
 #money{
@@ -253,6 +259,7 @@ div.text p.dummy-text{
   border: 1px solid #31859C;
   box-sizing: border-box;
   border-radius: 17px;
+  outline:none;
 }
 
 #pollution{
@@ -265,6 +272,7 @@ div.text p.dummy-text{
   border: 1px solid #31859C;
   box-sizing: border-box;
   border-radius: 17px;
+  outline:none;
 }
 #reduces{
   position: absolute;
