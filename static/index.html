@@ -1,4 +1,4 @@
-﻿<!doctype HTML>
+<!doctype HTML>
 <html lang=en>
     <head>
         <meta charset="utf-8">
@@ -14,7 +14,7 @@
         <h1>HANS ROSLING CENTER for POPULATION HEALTH</h1>
         <h2>Feb 17 11:30 AM</h2>
         <hr>
-        <img src="images/W-Logo_White.png" alt="Logo">
+        <img class="logo" src="images/W-Logo_White.png" alt="Logo">
     </header>
     <body>
         <!--Navigation Bar:-->
@@ -35,59 +35,47 @@
         </div>
         <!--Buttons:-->
         <div class="buttons">
-            <button onclick="router.loadRoute('benefits')">
+            <a href="benefitsLink" class="benefits">
                 <div class="button1">
                     <p class="tapTo">tap to</p>
                     <p class="description">learn about the benefits</p>
                 </div>
-            </button>
-            <button onclick="router.loadRoute('rainwaterSystem')">
+            </a>
+            <a href="rainwaterLink" class="rainwater">
                 <div class="button2">
                     <p class="tapTo">tap to</p>
                     <p class="description">explore the rainwater system</p>
                 </div>
-            </button>
-            <button onclick="router.loadRoute('rainCycle')">
+            </a>
+            <a href="cycleLink" class="cycle">
                 <div class="button3">
                     <p class="tapTo">tap to</p>
                     <p class="description">explore the rain cycle</p>
                 </div>
-            </button>
-            <button onclick="router.loadRoute('rainwaterGame')">
+            </a>
+            <a href="gameLink" class="game">
                 <div class="button4">
                     <p class="tapTo">tap to</p>
                     <p class="description">play the rainwater game</p>
                 </div>
-            </button>
-            <button onclick="textChange()">
-                <div class="button5">
-                    <p class="tapTo">tap to</p>
-                    <p class="description">reduces flooding & erosion</p>
-                </div>
-            </button>
-            <button onclick="textChange()">
-                <div class="button6">
-                    <p class="tapTo">tap to</p>
-                    <p class="description">saves money</p>
-                </div>
-            </button>
-            <button onclick="textChange()">
-                <div class="button7">
-                    <p class="tapTo">tap to</p>
-                    <p class="description">reduces water demand</p>
-                </div>
-            </button>
-            <button onclick="textChange()">
-                <div class="button8">
-                    <p class="tapTo">tap to</p>
-                    <p class="description">reduces pollution transportation</p>
-                </div>
-            </button>
+            </a>
         </div>
-
+        <button id="floodingErosion">
+            <p id="reduces">reduces flooding & erosion</p>
+            <img id="flood" src="images/flooding-erosion.png" alt="floodingErosion">
+        </button>
+        <button id="money">
+            <p id="saves">saves money</p>
+            <img id="wallet" src="images/money.png" alt="money">
+        </button>
+        <button id="waterDemand">
+            <p id="demand">reduces water demand</p>
+            <img id="water" src="images/water.png" alt="water">
+        </button>
+        <button id="pollution" onClick="getElementById('pollution').innerHTML ='hi'">
+            <p id="transportation">reduces pollution transportation</p>
+            <img id="car" src="images/pollution.png" alt="pollution">
+        </button>
         <div data-router-outlet></div>
-        <script src="../js/router.js"></script>
-        <script src="../js/routes.js"></script>
-        <script src="../js/index.js"></script>
     </body>
 </html>

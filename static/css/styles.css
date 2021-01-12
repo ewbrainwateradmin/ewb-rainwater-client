@@ -1,6 +1,7 @@
 
 html {
   background: #E5E5E5;
+  zoom: 2.634146341;
 }
 h1 {
     position: absolute;
@@ -20,7 +21,8 @@ h1 {
 
 .header {
     position: absolute;
-    width: 676px;
+    /*width: 676px;*/
+    width: 728.9px;
     height: 56px;
     left: 0px;
     top: 0px;
@@ -32,7 +34,8 @@ h2 {
     position: absolute;
     width: 68px;
     height: 36px;
-    left: 589px;
+    /*left: 589px;*/
+    left: 635.1px;
     top: 10px;
     
     font-family: Encode Sans;
@@ -49,13 +52,14 @@ hr {
     position: absolute;
     width: 86px;
     height: 0px;
-    left: 580px;
+    /*left: 580px;*/
+    left: 625.4px;
     top: 30.5px;
 
     border: 0.5px solid #FFFFFF;
 }
 
-img {
+.logo {
     position: absolute;
     width: 56px;
     height: 37px;
@@ -66,15 +70,15 @@ img {
 }
 /* The sidebar */
 .sidenav {
-    height: 344x; 
-    width: 148px; 
-    position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+    height: 344px;
+    width: 149px; 
+    position: absolute; /* Fixed Sidebar (stay in place on scroll) */
     top: 61px; 
     left: 5px;
     background-color: #A8C8C7; 
-    padding-top: 0%;
+    /*padding-top: 0%;
     padding-left: 0%;
-    padding-right: 0%;
+    padding-right: 0%;*/
   }
 /* Regular text that appears on the sidebar */
 .sidenav p.sidebar-text { 
@@ -129,7 +133,7 @@ img {
 }
 
 /*buttons:*/
-.buttons button div.button1 {
+.buttons .benefits div.button1 {
   position: absolute;
   width: 90px;
   height: 90px;
@@ -139,7 +143,7 @@ img {
   top: 77px;
 }
 
-.buttons button div.button2 {
+.buttons .rainwater div.button2 {
   position: absolute;
   width: 90px;
   height: 90px;
@@ -149,7 +153,7 @@ img {
   border-radius: 5px;
 }
 
-.buttons button div.button3 {
+.buttons .cycle div.button3 {
   height: 90px;
   width: 90px; 
   position: absolute; 
@@ -159,7 +163,7 @@ img {
   border-radius: 5px;
 }
 
-.buttons button div.button4 {
+.buttons .game div.button4 {
   height: 90px;
   width: 90px; 
   position: absolute; 
@@ -170,7 +174,7 @@ img {
 }
 
 /*the words "tap to" on the button*/
-.buttons button p.tapTo {
+.buttons a p.tapTo {
   width: 90px;
   height: 16px;
   font-family: Encode Sans;
@@ -183,7 +187,7 @@ img {
 }
 
 /*the description on the button*/
-div.buttons button p.description {
+div.buttons a p.description {
   width: 90px;
   height: 20px;
   font-family: Encode Sans;
@@ -206,7 +210,7 @@ div.buttons div.button1:hover, div.buttons div.button2:hover, div.buttons div.bu
   cursor: pointer; 
 }
 
-div.buttons button p.description:hover, div.buttons button p.tapTo:hover {
+div.buttons a p.description:hover, div.buttons a p.tapTo:hover {
   color: #31859C;
 }
 
@@ -216,4 +220,173 @@ div.text p.dummy-text{
   font-size: 20px;
   margin-top: 200px;
   margin-left: 200px;
+}
+
+/*Benefits page buttons*/
+#floodingErosion{
+  position: absolute;
+  width: 221px;
+  height: 108px;
+  left: 173px;
+  top: 175px;
+
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 17px;
+  outline:none;
+}
+
+#waterDemand{
+  position: absolute;
+  width: 221px;
+  height: 108px;
+  left: 173px;
+  top: 291px;
+
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 17px;
+  outline:none;
+}
+
+#money{
+  position: absolute;
+  width: 221px;
+  height: 108px;
+  left: 435px;
+  top: 175px;
+
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 17px;
+  outline:none;
+}
+
+#pollution{
+  position: absolute;
+  width: 221px;
+  height: 108px;
+  left: 435px;
+  top: 292px;
+
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 17px;
+  outline:none;
+}
+#reduces{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 0px;
+  top: 1px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+}
+
+#saves{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 130px;
+  top: 1px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+}
+
+#wallet{
+  position: absolute;
+  width: 98px;
+  height: 94px;
+  left: 12px;
+  top: 8px;
+  
+  background: url(money.png);
+}
+
+#flood{
+  position: absolute;
+  width: 137px;
+  height: 85px;
+  left: 73px;
+  top: 16px;
+  
+
+  background: url(flooding-erosion.png);
+}
+
+#demand{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 0px;
+  top: 0px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+}
+
+#water{
+  position: absolute;
+  width: 89px;
+  height: 99px;
+  left: 121px;
+  top: 5px;
+
+  background: url(water.png);
+}
+
+#transportation{
+  position: absolute;
+  width: 98px;
+  height: 90px;
+  left: 121px;
+  top: 1px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+}
+
+#car{
+  position: absolute;
+  width: 137px;
+  height: 78px;
+  left: 14px;
+  top: 25px;
+
+  background: url(pollution-transportation.png);
 }
