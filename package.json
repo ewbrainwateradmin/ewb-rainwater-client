@@ -4,20 +4,18 @@
   "description": "This is the repository for the UW Engineers Without Borders. Here we will be working on the client side code for the rainwater local project display.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index",
-    "dev": "nodemon index"
+    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/EvanTruesdale/ewb-rainwater-client.git"
+    "url": "git+https://github.com/ChuckBowers/ewb-rainwater-client.git"
   },
   "author": "",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/EvanTruesdale/ewb-rainwater-client/issues"
+    "url": "https://github.com/ChuckBowers/ewb-rainwater-client/issues"
   },
-  "homepage": "https://github.com/EvanTruesdale/ewb-rainwater-client#readme",
+  "homepage": "https://github.com/ChuckBowers/ewb-rainwater-client#readme",
   "dependencies": {
     "express": "^4.17.1"
   }
