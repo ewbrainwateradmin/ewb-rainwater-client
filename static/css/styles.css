@@ -75,7 +75,7 @@ hr {
     position: absolute; /* Fixed Sidebar (stay in place on scroll) */
     top: 61px; 
     left: 5px;
-    background-color: #A8C8C7; 
+    background: rgba(75, 46, 131, 0.3);
     /*padding-top: 0%;
     padding-left: 0%;
     padding-right: 0%;*/
@@ -234,6 +234,8 @@ div.text p.dummy-text{
   box-sizing: border-box;
   border-radius: 17px;
   outline:none;
+  z-index:5;
+  display:block;
 }
 
 #waterDemand{
@@ -246,6 +248,7 @@ div.text p.dummy-text{
   border: 1px solid #31859C;
   box-sizing: border-box;
   border-radius: 17px;
+  z-index:5;
   outline:none;
 }
 
@@ -259,7 +262,9 @@ div.text p.dummy-text{
   border: 1px solid #31859C;
   box-sizing: border-box;
   border-radius: 17px;
+  z-index:5;
   outline:none;
+  display:block;
 }
 
 #pollution{
@@ -272,6 +277,7 @@ div.text p.dummy-text{
   border: 1px solid #31859C;
   box-sizing: border-box;
   border-radius: 17px;
+  z-index:5;
   outline:none;
 }
 #reduces{
@@ -389,4 +395,226 @@ div.text p.dummy-text{
   top: 25px;
 
   background: url(pollution-transportation.png);
+}
+
+#floodingErosionBack{
+  position: absolute;
+  width: 221px;
+  height: 108px;
+  left: 173px;
+  top: 175px;
+  z-index:1;
+  border: 1px solid #31859C;
+  background: #E5E5E5;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 17px;
+  outline:none;
+}
+
+#floodingErosionBackHead{
+  position: absolute;
+  width: 184px;
+  height: 29px;
+  left:16px;
+  right:21px;
+  
+  bottom:60px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+  
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+}
+
+#floodingErosionBackBody{
+  position: absolute;
+  width: 175px;
+  height: 66px;
+  left:20px;
+  right:26px;
+  top:15px;
+  bottom:12px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  /* "black" */
+
+  color: linear-gradient(0deg, #2E2A2A, #2E2A2A), linear-gradient(0deg, #A8C8C7, #A8C8C7), linear-gradient(0deg, #A8C8C7, #A8C8C7), #A8C8C7;
+}
+
+#moneyBack{
+  position: absolute;
+  width: 221px;
+  height: 108px;
+  left: 435px;
+  top: 175px;
+
+  border: 1px solid #31859C;
+  background: #E5E5E5;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
+  border-radius: 17px;
+  outline:none;
+}
+
+#moneyBackHead{
+  position:absolute;
+  width: 184px;
+  height: 29px;
+  left:16px;
+  right:21px;
+  
+  bottom:60px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+
+}
+
+#moneyBackBody{
+  position: absolute;
+  width: 175px;
+  height: 66px;
+  left:20px;
+  right:26px;
+  top:15px;
+  bottom:12px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  /* "black" */
+
+  color: linear-gradient(0deg, #2E2A2A, #2E2A2A), linear-gradient(0deg, #A8C8C7, #A8C8C7), linear-gradient(0deg, #A8C8C7, #A8C8C7), #A8C8C7;
+
+}
+
+#waterDemandBack{
+  position: absolute;
+  width: 221px;
+  height: 108px;
+  left: 173px;
+  top: 291px;
+
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 17px;
+  z-index:1;
+  outline:none;
+}
+
+#waterDemandBackHead{
+  position:absolute;
+  width: 184px;
+  height: 29px;
+  left:16px;
+  right:21px;
+  
+  bottom:60px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+
+}
+
+#waterDemandBackBody{
+  position: absolute;
+  width: 175px;
+  height: 66px;
+  left:20px;
+  right:26px;
+  top:15px;
+  bottom:12px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  /* "black" */
+
+  color: linear-gradient(0deg, #2E2A2A, #2E2A2A), linear-gradient(0deg, #A8C8C7, #A8C8C7), linear-gradient(0deg, #A8C8C7, #A8C8C7), #A8C8C7;
+}
+
+#pollutionBack{
+  position: absolute;
+  width: 221px;
+  height: 108px;
+  left: 435px;
+  top: 292px;
+
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 17px;
+  z-index:1;
+  outline:none;
+}
+
+#pollutionBackHead{
+  position:absolute;
+  width: 184px;
+  height: 29px;
+  left:16px;
+  right:21px;
+  
+  bottom:60px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 18px;
+
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+
+}
+
+#pollutionBackBody{
+  position: absolute;
+  width: 175px;
+  height: 66px;
+  left:20px;
+  right:26px;
+  top:15px;
+  bottom:12px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+
+  /* "black" */
+
+  color: linear-gradient(0deg, #2E2A2A, #2E2A2A), linear-gradient(0deg, #A8C8C7, #A8C8C7), linear-gradient(0deg, #A8C8C7, #A8C8C7), #A8C8C7;
 }
