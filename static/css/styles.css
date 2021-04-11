@@ -250,6 +250,7 @@ div.text p.dummy-text{
   border-radius: 17px;
   z-index:5;
   outline:none;
+  display:block;
 }
 
 #money{
@@ -278,7 +279,7 @@ div.text p.dummy-text{
   box-sizing: border-box;
   border-radius: 17px;
   z-index:5;
-  outline:none;
+  outline:none; 
 }
 #reduces{
   position: absolute;
@@ -410,6 +411,7 @@ div.text p.dummy-text{
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 17px;
   outline:none;
+  display:none;
 }
 
 #floodingErosionBackHead{
@@ -464,6 +466,7 @@ div.text p.dummy-text{
   box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   border-radius: 17px;
+  display:none;
   outline:none;
 }
 
@@ -519,7 +522,9 @@ div.text p.dummy-text{
   border: 1px solid #31859C;
   box-sizing: border-box;
   border-radius: 17px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   z-index:1;
+  display:none;
   outline:none;
 }
 
@@ -574,7 +579,9 @@ div.text p.dummy-text{
   border: 1px solid #31859C;
   box-sizing: border-box;
   border-radius: 17px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.5);
   z-index:1;
+  display:none;
   outline:none;
 }
 

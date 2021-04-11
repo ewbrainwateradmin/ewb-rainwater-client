@@ -1,6 +1,8 @@
 
 
 
+
+
 function toggleText(id,id2) {
     var a = document.getElementById(id);
     var b = document.getElementById(id2);
@@ -17,3 +19,4 @@ function toggleText(id,id2) {
       }
     }
 }
+
