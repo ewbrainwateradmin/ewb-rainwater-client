@@ -60,21 +60,46 @@
                 </div>
             </a>
         </div>
-        <button id="floodingErosion">
+        <button onclick="toggleText('floodingErosion', 'floodingErosionBack')" id="floodingErosion">
             <p id="reduces">reduces flooding & erosion</p>
             <img id="flood" src="images/flooding-erosion.png" alt="floodingErosion">
         </button>
-        <button id="money">
+        <button onclick="toggleText('money','moneyBack')" id="money">
             <p id="saves">saves money</p>
             <img id="wallet" src="images/money.png" alt="money">
         </button>
-        <button id="waterDemand">
+        <button onclick="toggleText('waterDemand','waterDemandBack')" id="waterDemand">
             <p id="demand">reduces water demand</p>
             <img id="water" src="images/water.png" alt="water">
         </button>
-        <button id="pollution" onClick="getElementById('pollution').innerHTML ='hi'">
+        <button onclick="toggleText('pollution','pollutionBack')" id="pollution">
             <p id="transportation">reduces pollution transportation</p>
             <img id="car" src="images/pollution.png" alt="pollution">
+        </button>
+        <!--Button Backs-->
+        <button onclick="toggleText('moneyBack','money')" id="moneyBack">
+            <p id="moneyBackHead">saves money</p>
+            <p id="moneyBackBody">
+                Once the system is installed, no payment is needed for the water, whereas municipal water is paid for by use.
+            </p>
+        </button>
+        <button onclick="toggleText('floodingErosionBack','floodingErosion')" id="floodingErosionBack">
+            <p id="floodingErosionBackHead">reduces flooding & erosion</p>
+            <p id="floodingErosionBackBody">
+                Rainwater harvesting diverts water that would otherwise cause flooding and erosion in events of high rainfall.
+            </p>
+        </button>
+        <button onclick="toggleText('waterDemandBack','waterDemand')" id="waterDemandBack">
+            <p id="waterDemandBackHead">reduces water demand</p>
+            <p id="waterDemandBackBody">
+                Switching to rainwater reduces demand of the municipal water supply.
+            </p>
+        </button>
+        <button onclick="toggleText('pollutionBack','pollution')" id="pollutionBack">
+            <p id="pollutionBackHead">reduces pollution transportation</p>
+            <p id="pollutionBackBody">
+                Rainwater harvesting can divert water that would run into lakes and carry with it all of the pollutants from the roads.
+            </p>
         </button>
         <div data-router-outlet></div>
     </body>
