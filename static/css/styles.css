@@ -267,17 +267,18 @@ div.buttons a p.description {
 
 /*make the buttons change state when you hover over*/
 div.buttons div.button1:hover, div.buttons div.button2:hover, div.buttons div.button3:hover, div.buttons div.button4:hover{
-  background-color: #ECECEC;
+  /*background-color: #ECECEC;*/
   border: 1px solid #31859C;
   box-sizing: border-box;
   border-radius: 5px;
   cursor: pointer;
 }
 
+/*
 div.buttons a p.description:hover, div.buttons a p.tapTo:hover {
   color: #31859C;
 }
-
+*/
 /*text for dummy routing pages*/
 /*
 div.text p.dummy-text{
