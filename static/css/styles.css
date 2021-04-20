@@ -230,45 +230,53 @@ hr { /*this is the place to edit that little line by the time thing*/
 
 /*the words "tap to" on the button*/
 .buttons a p.tapTo {
-  width: 90px;
-  height: 16px;
   font-family: Encode Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 11px;
-  line-height: 14px;
+  font-size: 18px;
+  line-height: 22px;
   text-align: center;
-  color:#FFFFFF;
+  text-transform: lowercase;
+  position: relative;
+  top: -7px;
+  color: white;
+
 }
 
 /*the description on the button*/
 div.buttons a p.description {
-  width: 90px;
-  height: 20px;
   font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  font-size: 18px;
+  line-height: 22px;
   display: flex;
   align-items: center;
   text-align: center;
-  color: #FFFFFF;
+  text-transform: capitalize;
+  position: relative;
+  top: -15px;
+  color: white;
+}
+
+.buttons .benefits div.button1 p {
+  color: #31859C;
 }
 
 /*make the buttons change state when you hover over*/
 div.buttons div.button1:hover, div.buttons div.button2:hover, div.buttons div.button3:hover, div.buttons div.button4:hover{
-  background-color: #ECECEC;
+  /*background-color: #ECECEC;*/
   border: 1px solid #31859C;
   box-sizing: border-box;
   border-radius: 5px;
   cursor: pointer;
 }
 
+/*
 div.buttons a p.description:hover, div.buttons a p.tapTo:hover {
   color: #31859C;
 }
-
+*/
 /*text for dummy routing pages*/
 /*
 div.text p.dummy-text{
