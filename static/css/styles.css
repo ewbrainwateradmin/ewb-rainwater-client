@@ -20,7 +20,7 @@ h1 { /*come back and look at the fonts here*/
   left: 70px;
   top: 12px;
 
-  font-family: Encode Sans;
+  font-family: 'Encode Sans';
   font-style: normal;
   font-weight: 900;
   font-size: 15px;
@@ -107,7 +107,7 @@ hr { /*this is the place to edit that little line by the time thing*/
   width: 214px;
   height: 39px;
   left: 5px;
-  top: 74px;
+  top: 13px;
 }
 
 #bottom_nav_text {
@@ -115,7 +115,7 @@ hr { /*this is the place to edit that little line by the time thing*/
   width: 181px;
   height: 36px;
   left: 22px;
-  top: 138px;
+  top: 77px;
 }
 
 #nav_hr {
@@ -123,7 +123,7 @@ hr { /*this is the place to edit that little line by the time thing*/
   width: 194px;
   height: 0px;
   left: 15px;
-  top: 129px;
+  top: 80px;
 
   /* c */
 
@@ -135,7 +135,7 @@ hr { /*this is the place to edit that little line by the time thing*/
   width: 120px;
   height: 120px;
   left: 53px;
-  top: 193px;
+  top: 160px;
 }
 
 #bathtubs {
@@ -143,7 +143,7 @@ hr { /*this is the place to edit that little line by the time thing*/
   width: 119px;
   height: 120px;
   left: 53px;
-  top: 381px;
+  top: 320px;
 }
 /* The square the goes around the data */
 .sidenav div.square {
@@ -162,13 +162,15 @@ hr { /*this is the place to edit that little line by the time thing*/
   line-height: 110%; /* different from sidebar-text */
   font-weight: 400;
   text-align: center;
-  color: #111;
+  color: white;
   margin-top: -5%; /* different from sidebar-text */
+  position: relative;
+  top: 20px;
 }
 /* The numbers inside the data square */
 .sidenav div.square p.number {
   font-family: 'Encode Sans', sans-serif;
-  font-size: 150%;
+  font-size: 40px;
   line-height: 110%;
   font-weight: bold;
   text-align: center;
@@ -176,13 +178,9 @@ hr { /*this is the place to edit that little line by the time thing*/
   margin-top: 10%;
   top: 200px;
   margin-bottom: 10%;
-}
-/* The line that separates the two facts */
-#nav_hr{
-  border: 0.5px solid #111;
-  width: 132px;
-  left: 10px;
-  top: 165px;
+  color: white;
+  position: relative;
+  top: 15px;
 }
 
 /*buttons:*/
@@ -513,7 +511,7 @@ div.text p.dummy-text{
   right:21px;
 
   bottom:60px;
-  font-family: Encode Sans;
+  font-family: 'Encode Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -534,7 +532,7 @@ div.text p.dummy-text{
   right:26px;
   top:15px;
   bottom:12px;
-  font-family: Encode Sans;
+  font-family: 'Encode Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -556,7 +554,7 @@ div.text p.dummy-text{
   right:21px;
 
   bottom:60px;
-  font-family: Encode Sans;
+  font-family: 'Encode Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -577,7 +575,7 @@ div.text p.dummy-text{
   right:26px;
   top:15px;
   bottom:12px;
-  font-family: Encode Sans;
+  font-family: 'Encode Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
@@ -597,7 +595,7 @@ div.text p.dummy-text{
   right:21px;
 
   bottom:60px;
-  font-family: Encode Sans;
+  font-family: 'Encode Sans';
   font-style: normal;
   font-weight: 600;
   font-size: 12px;
@@ -618,7 +616,7 @@ div.text p.dummy-text{
   right:26px;
   top:15px;
   bottom:12px;
-  font-family: Encode Sans;
+  font-family: 'Encode Sans';
   font-style: normal;
   font-weight: normal;
   font-size: 12px;
