@@ -1,7 +1,7 @@
 
 html {
   background: #E5E5E5;
-  zoom: 2.634146341;
+  /*zoom: 2.634146341;*/
 }
 h1 {
     position: absolute;
@@ -624,4 +624,17 @@ div.text p.dummy-text{
   /* "black" */
 
   color: linear-gradient(0deg, #2E2A2A, #2E2A2A), linear-gradient(0deg, #A8C8C7, #A8C8C7), linear-gradient(0deg, #A8C8C7, #A8C8C7), #A8C8C7;
+}
+
+/* Rainwater CSS*/
+
+.rainwaterSystem{
+  position: absolute;
+  width: 721px;
+  height: 299px;
+  /*left:224px;
+  top:234px;
+  bottom:7px;*/
+
+  background: url(rainwaterSystem.png);
 }

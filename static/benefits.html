@@ -1,3 +1,106 @@
-<html>
-    <h1>Benefits</h1>    
+<!doctype HTML>
+<html lang=en>
+    <head>
+        <meta charset="utf-8">
+        <title>Hans Rosling Center for Population Health</title>
+        <link rel="stylesheet" href="css/styles.css">
+        <script src="src/index.js"></script>
+        <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
+    </head>
+    <!--Header:-->
+    <header>
+        <div class = "header">
+        </div>
+        <h1>HANS ROSLING CENTER for POPULATION HEALTH</h1>
+        <h2>Feb 17 11:30 AM</h2>
+        <hr>
+        <img class="logo" src="images/W-Logo_White.png" alt="Logo">
+    </header>
+    <body>
+        <!--Navigation Bar:-->
+        <div class="sidenav">
+            <p class="sidebar-text">This building operates using rainwater.</p>
+            <div class="square">
+                <p class="number">77</p>
+                <p class="description">gallons</p>
+            </div>
+            <p class="sidebar-text">of water have been saved this month.</p>
+            <hr>
+            <p class="sidebar-text">That is the equivalent of</p>
+            <div class="square">
+                <p class="number">582</p>
+                <p class="description">water bottles</p>
+            </div>
+            <p class="sidebar-text">saved this month.</p>
+        </div>
+        <!--Buttons:-->
+        <div class="buttons">
+            <a href="benefitsLink" class="benefits">
+                <div class="button1">
+                    <p class="tapTo">tap to</p>
+                    <p class="description">learn about the benefits</p>
+                </div>
+            </a>
+            <a href="rainwaterLink" class="rainwater">
+                <div class="button2">
+                    <p class="tapTo">tap to</p>
+                    <p class="description">explore the rainwater system</p>
+                </div>
+            </a>
+            <a href="cycleLink" class="cycle">
+                <div class="button3">
+                    <p class="tapTo">tap to</p>
+                    <p class="description">explore the rain cycle</p>
+                </div>
+            </a>
+            <a href="gameLink" class="game">
+                <div class="button4">
+                    <p class="tapTo">tap to</p>
+                    <p class="description">play the rainwater game</p>
+                </div>
+            </a>
+        </div>
+        <button onclick="toggleText('floodingErosion', 'floodingErosionBack')" id="floodingErosion">
+            <p id="reduces">reduces flooding & erosion</p>
+            <img id="flood" src="images/flooding-erosion.png" alt="floodingErosion">
+        </button>
+        <button onclick="toggleText('money','moneyBack')" id="money">
+            <p id="saves">saves money</p>
+            <img id="wallet" src="images/money.png" alt="money">
+        </button>
+        <button onclick="toggleText('waterDemand','waterDemandBack')" id="waterDemand">
+            <p id="demand">reduces water demand</p>
+            <img id="water" src="images/water.png" alt="water">
+        </button>
+        <button onclick="toggleText('pollution','pollutionBack')" id="pollution">
+            <p id="transportation">reduces pollution transportation</p>
+            <img id="car" src="images/pollution.png" alt="pollution">
+        </button>
+        <!--Button Backs-->
+        <button onclick="toggleText('moneyBack','money')" id="moneyBack">
+            <p id="moneyBackHead">saves money</p>
+            <p id="moneyBackBody">
+                Once the system is installed, no payment is needed for the water, whereas municipal water is paid for by use.
+            </p>
+        </button>
+        <button onclick="toggleText('floodingErosionBack','floodingErosion')" id="floodingErosionBack">
+            <p id="floodingErosionBackHead">reduces flooding & erosion</p>
+            <p id="floodingErosionBackBody">
+                Rainwater harvesting diverts water that would otherwise cause flooding and erosion in events of high rainfall.
+            </p>
+        </button>
+        <button onclick="toggleText('waterDemandBack','waterDemand')" id="waterDemandBack">
+            <p id="waterDemandBackHead">reduces water demand</p>
+            <p id="waterDemandBackBody">
+                Switching to rainwater reduces demand of the municipal water supply.
+            </p>
+        </button>
+        <button onclick="toggleText('pollutionBack','pollution')" id="pollutionBack">
+            <p id="pollutionBackHead">reduces pollution transportation</p>
+            <p id="pollutionBackBody">
+                Rainwater harvesting can divert water that would run into lakes and carry with it all of the pollutants from the roads.
+            </p>
+        </button>
+        <div data-router-outlet></div>
+    </body>
 </html>
