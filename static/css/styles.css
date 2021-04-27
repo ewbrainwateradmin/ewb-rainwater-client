@@ -313,13 +313,10 @@ div.text p.dummy-text{
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
   border-radius: 17px;
-<<<<<<< HEAD
   z-index: 2;
-=======
   z-index:5;
   outline:none;
   display:block;
->>>>>>> 8e5529a597794e54ca11bc1affa71229fd284685
 }
 
 #money, #moneyBack{
@@ -359,7 +356,7 @@ div.text p.dummy-text{
   font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 17px;
   display: flex;
   align-items: center;
@@ -467,38 +464,33 @@ div.text p.dummy-text{
 }
 
 #floodingErosionBackHead{
-  position: absolute;
-  width: 184px;
-  height: 29px;
-  left:16px;
-  right:21px;
+  position: relative;
+  top: -15px;
+  left: 15px;
 
-  bottom:60px;
   font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
   align-items: center;
   text-align: center;
 
   color: #31859C;
+
 }
 
 #floodingErosionBackBody{
-  position: absolute;
-  width: 175px;
-  height: 66px;
-  left:20px;
-  right:26px;
-  top:15px;
-  bottom:12px;
+  position: relative;
+
+  top: -25px;
+
   font-family: Encode Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
 
   /* "black" */
@@ -512,19 +504,16 @@ div.text p.dummy-text{
 }
 
 #moneyBackHead{
-  position:absolute;
-  width: 184px;
-  height: 29px;
-  left:16px;
-  right:21px;
+  position: relative;
+  top: -15px;
+  left: 70px;
 
-  bottom:60px;
-  font-family: 'Encode Sans';
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
   align-items: center;
   text-align: center;
 
@@ -533,18 +522,15 @@ div.text p.dummy-text{
 }
 
 #moneyBackBody{
-  position: absolute;
-  width: 175px;
-  height: 66px;
-  left:20px;
-  right:26px;
-  top:15px;
-  bottom:12px;
-  font-family: 'Encode Sans';
+  position: relative;
+
+  top: -25px;
+
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
 
   /* "black" */
@@ -555,19 +541,16 @@ div.text p.dummy-text{
 
 
 #waterDemandBackHead{
-  position:absolute;
-  width: 184px;
-  height: 29px;
-  left:16px;
-  right:21px;
+  position: relative;
+  top: -10px;
+  left: 35px;
 
-  bottom:60px;
-  font-family: 'Encode Sans';
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
   align-items: center;
   text-align: center;
 
@@ -576,18 +559,15 @@ div.text p.dummy-text{
 }
 
 #waterDemandBackBody{
-  position: absolute;
-  width: 175px;
-  height: 66px;
-  left:20px;
-  right:26px;
-  top:15px;
-  bottom:12px;
-  font-family: 'Encode Sans';
+  position: relative;
+
+  top: -25px;
+
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
 
   /* "black" */
@@ -596,19 +576,16 @@ div.text p.dummy-text{
 }
 
 #pollutionBackHead{
-  position:absolute;
-  width: 184px;
-  height: 29px;
-  left:16px;
-  right:21px;
+  position: relative;
+  top: -15px;
+  left: 5px;
 
-  bottom:60px;
-  font-family: 'Encode Sans';
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
   align-items: center;
   text-align: center;
 
@@ -617,18 +594,15 @@ div.text p.dummy-text{
 }
 
 #pollutionBackBody{
-  position: absolute;
-  width: 175px;
-  height: 66px;
-  left:20px;
-  right:26px;
-  top:15px;
-  bottom:12px;
-  font-family: 'Encode Sans';
+  position: relative;
+
+  top: -25px;
+
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 20px;
   text-align: center;
 
   /* "black" */
