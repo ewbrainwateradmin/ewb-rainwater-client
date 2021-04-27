@@ -313,13 +313,8 @@ div.text p.dummy-text{
   box-sizing: border-box;
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
   border-radius: 17px;
-<<<<<<< HEAD
+
   z-index: 2;
-=======
-  z-index:5;
-  outline:none;
-  display:block;
->>>>>>> 8e5529a597794e54ca11bc1affa71229fd284685
 }
 
 #money, #moneyBack{
