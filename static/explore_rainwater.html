@@ -3,11 +3,72 @@
     <head>
         <meta charset="utf-8">
         <title>Hans Rosling Center for Population Health</title>
-        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="css/stylesRainwater.css">
         <script src="src/index.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
     </head>
-
+    <!--Header:-->
+    <header>
+        <div class = "header">
+        </div>
+        <h1>HANS ROSLING CENTER for POPULATION HEALTH</h1>
+        <h2>Feb 17 11:30 AM</h2>
+        <hr id="top_bar_hr">
+        <img class="logo" src="images/W-Logo_White.png" alt="Logo">
+    </header>
+    <body>
+        <!--Navigation Bar:-->
+        <div class="sidenav">
+            <p class="sidebar-text" id="top_nav_text">This Building Operates Using Rainwater.</p>
+            <hr id="nav_hr">
+            <p class="sidebar-text" id="bottom_nav_text">Water Saved This Month:</p>
+            <div class="square" id="gallons">
+                <p class="number">77</p>
+                <p class="description">gallons</p>
+            </div>
+            <div class="square" id="bathtubs">
+                <p class="number">1.8</p>
+                <p class="description">bathtubs</p>
+            </div>
+        </div>
+        <!--Buttons:-->
+        <div class="buttons">
+            <a href="benefitsLink" class="benefits">
+                <div class="button1">
+                    <p class="tapTo">tap to</p>
+                    <p class="description">learn about the benefits</p>
+                </div>
+            </a>
+            <a href="rainwaterLink" class="rainwater">
+                <div class="button2">
+                    <p class="tapTo">tap to</p>
+                    <p class="description">explore the rainwater system</p>
+                </div>
+            </a>
+            <a href="gameLink" class="game">
+                <div class="button4">
+                    <p class="tapTo">tap to</p>
+                    <p class="description">play the rainwater game</p>
+                </div>
+            </a>
+        </div>
     <!--Rainwater System-->
     <img class="rainwaterSystem" src="images/rainwaterSystem.png" alt="rainwater">
+    <div id="catchment">
+
+    </div>
+    <div id="catchmentText">
+        <p id="catchmentHeader">
+            catchment system
+        </p>
+        <div id="arrow">
+
+        </div>
+        
+        <p id="catchmentBody">
+            Storm drains on the roof of the building have sufficient water diverted to the rainwater cistern to be used for rainwater filtration.
+            The rest is diverted to the city waste system, connected under the building.
+        </p>
+    </div>
+
 </html>

@@ -209,6 +209,7 @@ hr { /*this is the place to edit that little line by the time thing*/
 
   /* f */
 
+  
   background: #31859C;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
@@ -629,4 +630,100 @@ div.text p.dummy-text{
   /* "black" */
 
   color: linear-gradient(0deg, #2E2A2A, #2E2A2A), linear-gradient(0deg, #A8C8C7, #A8C8C7), linear-gradient(0deg, #A8C8C7, #A8C8C7), #A8C8C7;
+}
+
+
+/* Rainwater CSS*/
+
+.rainwaterSystem{
+  position: absolute;
+  width: 721px;
+  height: 299px;
+  left:228px;
+  top:234px;
+  bottom:7px;
+  right:11px;
+
+  background: url(rainwaterSystem.png);
+}
+
+#catchment{
+  position: absolute;
+  width: 80px;
+  height: 40px;
+  left:502px;
+  top:260px;
+  right:378px;
+  bottom:240px;
+
+  background: rgba(203, 215, 182, 0.5);
+  border: 1.5px solid #31859C;
+  box-sizing: border-box;
+}
+
+#catchmentText{
+  position: absolute;
+  width: 149px;
+  height: 167px;
+
+  top:260px;
+  left:620px;
+  right:191px;
+  bottom:113px;
+
+  background: #E5E5E5;
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#arrow{
+  position: absolute;
+  width: 149px;
+  height: 29px;
+
+  background: #CBD7B6;
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#catchmentHeader{
+  position: absolute;
+  width: 149px;
+  height: 24.6px;
+
+  top:20px;
+  /*bottom:117.4px;*/
+  right:0px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+}
+
+#catchmentBody{
+  position: absolute;
+  width: 139px;
+  height: 113px;
+
+  top:49px;
+  left:7px;
+  right:3px;
+  bottom:5px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+
+  color: #31859C;
 }
