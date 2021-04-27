@@ -158,7 +158,7 @@ hr { /*this is the place to edit that little line by the time thing*/
 /* The words that go right under the numbers in the square */
 .sidenav div.square p.description {
   font-family: 'Encode Sans', sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 110%; /* different from sidebar-text */
   font-weight: 400;
   text-align: center;
@@ -170,14 +170,14 @@ hr { /*this is the place to edit that little line by the time thing*/
 /* The numbers inside the data square */
 .sidenav div.square p.number {
   font-family: 'Encode Sans', sans-serif;
-  font-size: 40px;
+  font-size: 60px;
   line-height: 110%;
   font-weight: bold;
   text-align: center;
   color: #111;
-  margin-top: 10%;
+  margin-top: 0%;
   top: 200px;
-  margin-bottom: 10%;
+  margin-bottom: 3%;
   color: white;
   position: relative;
   top: 15px;
