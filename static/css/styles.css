@@ -14,11 +14,9 @@ body {
 }
 
 h1 { /*come back and look at the fonts here*/
-  position: absolute;
-  width: 193px;
-  height: 42px;
+  position: relative;
   left: 70px;
-  top: 12px;
+  width: 180px;
 
   font-family: 'Encode Sans';
   font-style: normal;
