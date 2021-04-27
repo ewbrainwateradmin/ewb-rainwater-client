@@ -14,11 +14,9 @@ body {
 }
 
 h1 { /*come back and look at the fonts here*/
-  position: absolute;
-  width: 193px;
-  height: 42px;
+  position: relative;
   left: 70px;
-  top: 12px;
+  width: 180px;
 
   font-family: 'Encode Sans';
   font-style: normal;
@@ -158,7 +156,7 @@ hr { /*this is the place to edit that little line by the time thing*/
 /* The words that go right under the numbers in the square */
 .sidenav div.square p.description {
   font-family: 'Encode Sans', sans-serif;
-  font-size: 14px;
+  font-size: 20px;
   line-height: 110%; /* different from sidebar-text */
   font-weight: 400;
   text-align: center;
@@ -170,14 +168,14 @@ hr { /*this is the place to edit that little line by the time thing*/
 /* The numbers inside the data square */
 .sidenav div.square p.number {
   font-family: 'Encode Sans', sans-serif;
-  font-size: 40px;
+  font-size: 60px;
   line-height: 110%;
   font-weight: bold;
   text-align: center;
   color: #111;
-  margin-top: 10%;
+  margin-top: 0%;
   top: 200px;
-  margin-bottom: 10%;
+  margin-bottom: 3%;
   color: white;
   position: relative;
   top: 15px;
@@ -354,7 +352,7 @@ div.text p.dummy-text{
   font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 14px;
+  font-size: 18px;
   line-height: 17px;
   display: flex;
   align-items: center;
@@ -462,38 +460,33 @@ div.text p.dummy-text{
 }
 
 #floodingErosionBackHead{
-  position: absolute;
-  width: 184px;
-  height: 29px;
-  left:16px;
-  right:21px;
+  position: relative;
+  top: -15px;
+  left: 15px;
 
-  bottom:60px;
   font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
   align-items: center;
   text-align: center;
 
   color: #31859C;
+
 }
 
 #floodingErosionBackBody{
-  position: absolute;
-  width: 175px;
-  height: 66px;
-  left:20px;
-  right:26px;
-  top:15px;
-  bottom:12px;
+  position: relative;
+
+  top: -25px;
+
   font-family: Encode Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
 
   /* "black" */
@@ -507,19 +500,16 @@ div.text p.dummy-text{
 }
 
 #moneyBackHead{
-  position:absolute;
-  width: 184px;
-  height: 29px;
-  left:16px;
-  right:21px;
+  position: relative;
+  top: -15px;
+  left: 70px;
 
-  bottom:60px;
-  font-family: 'Encode Sans';
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
   align-items: center;
   text-align: center;
 
@@ -528,18 +518,15 @@ div.text p.dummy-text{
 }
 
 #moneyBackBody{
-  position: absolute;
-  width: 175px;
-  height: 66px;
-  left:20px;
-  right:26px;
-  top:15px;
-  bottom:12px;
-  font-family: 'Encode Sans';
+  position: relative;
+
+  top: -25px;
+
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
 
   /* "black" */
@@ -550,19 +537,16 @@ div.text p.dummy-text{
 
 
 #waterDemandBackHead{
-  position:absolute;
-  width: 184px;
-  height: 29px;
-  left:16px;
-  right:21px;
+  position: relative;
+  top: -10px;
+  left: 35px;
 
-  bottom:60px;
-  font-family: 'Encode Sans';
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
   align-items: center;
   text-align: center;
 
@@ -571,18 +555,15 @@ div.text p.dummy-text{
 }
 
 #waterDemandBackBody{
-  position: absolute;
-  width: 175px;
-  height: 66px;
-  left:20px;
-  right:26px;
-  top:15px;
-  bottom:12px;
-  font-family: 'Encode Sans';
+  position: relative;
+
+  top: -25px;
+
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 16px;
+  line-height: 20px;
   text-align: center;
 
   /* "black" */
@@ -591,19 +572,16 @@ div.text p.dummy-text{
 }
 
 #pollutionBackHead{
-  position:absolute;
-  width: 184px;
-  height: 29px;
-  left:16px;
-  right:21px;
+  position: relative;
+  top: -15px;
+  left: 5px;
 
-  bottom:60px;
-  font-family: 'Encode Sans';
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
-  font-size: 12px;
-  line-height: 18px;
-
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
   align-items: center;
   text-align: center;
 
@@ -612,18 +590,15 @@ div.text p.dummy-text{
 }
 
 #pollutionBackBody{
-  position: absolute;
-  width: 175px;
-  height: 66px;
-  left:20px;
-  right:26px;
-  top:15px;
-  bottom:12px;
-  font-family: 'Encode Sans';
+  position: relative;
+
+  top: -25px;
+
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 12px;
-  line-height: 18px;
+  font-size: 15px;
+  line-height: 20px;
   text-align: center;
 
   /* "black" */
