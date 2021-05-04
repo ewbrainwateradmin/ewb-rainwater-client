@@ -43,7 +43,7 @@ h2 {
   width: 70px;
   height: 36px;
   left: 876px;
-  top: 8px;
+  top: 0px;
 
   font-family: 'Encode Sans';
   font-style: normal;
@@ -60,7 +60,7 @@ hr { /*this is the place to edit that little line by the time thing*/
   width: 86px;
   height: 0px;
   left: 865px;
-  top: 28px;
+  top: 20px;
 
   /*border: 1px solid #FFFFFF;*/
 }
