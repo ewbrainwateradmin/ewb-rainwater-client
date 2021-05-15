@@ -620,6 +620,15 @@ div.text p.dummy-text{
   background: url(rainwaterSystem.png);
 }
 
+.arrow{
+  position: relative;
+  width: 18px;
+  height: 12px;
+
+  left:65px;
+  top:5px;
+
+}
 #catchment{
   position: absolute;
   width: 80px;
@@ -648,9 +657,11 @@ div.text p.dummy-text{
   border: 1px solid #31859C;
   box-sizing: border-box;
   border-radius: 5px;
+
+  display:none;
 }
 
-#arrow{
+#arrow1{
   position: absolute;
   width: 149px;
   height: 29px;
@@ -666,16 +677,14 @@ div.text p.dummy-text{
   width: 149px;
   height: 24.6px;
 
-  top:20px;
-  /*bottom:117.4px;*/
-  right:0px;
+  top:18px;
 
   font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  display: flex;
+  display: inline-block;
   align-items: center;
   text-align: center;
 
@@ -687,11 +696,307 @@ div.text p.dummy-text{
   width: 139px;
   height: 113px;
 
-  top:49px;
+  top:40px;
   left:7px;
   right:3px;
   bottom:5px;
 
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+
+  color: #31859C;
+}
+
+#daytank{
+  position: absolute;
+  width: 23px;
+  height: 23px;
+  top:420px;
+  left:498px;
+
+  background: rgba(231, 175, 86, 0.5);
+  border: 1.5px solid #31859C;
+  box-sizing: border-box;
+}
+
+#daytankText{
+  position: absolute;
+  width: 149px;
+  height: 167px;
+
+  left:550px;
+  top:300px;
+
+  background: #E5E5E5;
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  display:none;
+}
+
+#arrow2{
+  position: absolute;
+  width: 149px;
+  height: 29px;
+
+  background: #E7AF56;
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#daytankHeader{
+  position: absolute;
+  width: 149px;
+  height: 24.6px;
+
+  top:18px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+}
+
+#daytankBody{
+  position: absolute;
+  width: 139px;
+  height: 113px;
+
+  top:40px;
+  left:7px;
+  
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+  
+  color: #31859C;
+}
+
+#treatment{
+  position: absolute;
+  width: 25px;
+  height: 25px;
+
+  top:420px;
+  left:472px;
+
+  background: rgba(235, 154, 110, 0.5);
+  border: 1.5px solid #31859C;
+  box-sizing: border-box;
+}
+
+#arrow3{
+  position: absolute;
+  width: 149px;
+  height: 29px;
+
+  background: #EB9A6E;
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#treatmentText{
+  position: absolute;
+  width: 149px;
+  height: 167px;
+
+  left:520px;
+  top:280px;
+
+  background: #E5E5E5;
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  display:none;
+}
+
+#treatmentHeader{
+  position: absolute;
+  width: 149px;
+  height: 24.6px;
+
+  top:18px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+}
+
+#treatmentBody{
+  position: absolute;
+  width: 139px;
+  height: 113px;
+
+  top:54px;
+  left:12px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+
+  color: #31859C;
+}
+
+#cistern{
+  position: absolute;
+  width: 30px;
+  height: 27px;
+
+  top:418px;
+  left:438px;
+
+  background: rgba(173, 203, 202, 0.5);
+  border: 1.5px solid #31859C;
+  box-sizing: border-box;
+}
+
+#arrow4{
+  position: absolute;
+  width: 149px;
+  height: 29px;
+  
+  background: #ADCBCA;
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#cisternText{
+  position: absolute;
+  width: 149px;
+  height: 167px;
+
+  top:321px;
+  left:250px;
+
+  background: #E5E5E5;
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  display:none;
+}
+
+#cisternHeader{
+  position: absolute;
+  width: 149px;
+  height: 24.6px;
+
+  top:18px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+}
+
+#cisternBody{
+  position: absolute;
+  width: 139px;
+  height: 113px;
+
+  top:53px;
+  left:7px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 11px;
+  line-height: 14px;
+
+  color: #31859C;
+}
+
+#flowMeter{
+  position: absolute;
+  width: 31px;
+  height: 10px;
+
+  top:410px;
+  left:500px;
+
+  background: rgba(94, 155, 146, 0.5);
+  border: 1.5px solid #31859C;
+  box-sizing: border-box;
+}
+
+#flowMeterText{
+  position: absolute;
+  width: 149px;
+  height: 167px;
+
+  top:299px;
+  left:588px;
+  background: #E5E5E5;
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 5px;
+
+  display:none;
+}
+
+#flowMeterHeader{
+  position: absolute;
+  width: 149px;
+  height: 24.6px;
+
+  top:18px;
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: inline-block;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+}
+
+#arrow5{
+  position: absolute;
+  width: 149px;
+  height: 29px;
+  
+  background: #5E9B92;
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 5px;
+}
+
+#flowMeterBody{
+  position: absolute;
+  width: 139px;
+  height: 113px;
+
+  top:50px;
+  left:12px;
   font-family: Encode Sans;
   font-style: normal;
   font-weight: normal;

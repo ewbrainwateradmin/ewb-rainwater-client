@@ -1,5 +1,35 @@
 
 
+function togglePanel(id,panelId){
+  var button = document.getElementById(id);
+  var panel = document.getElementById(panelId);
+
+  let buttons = [document.getElementById("catchment"), document.getElementById("daytank"), document.getElementById("treatment"), document.getElementById("cistern"), document.getElementById("flowMeter")];
+  let panels = [document.getElementById("catchmentText"), document.getElementById("daytankText"), document.getElementById("treatmentText"), document.getElementById("cisternText"), document.getElementById("flowMeterText")];
+
+  if(panel.style.display == "none"){
+    panel.style.display = "block";
+    hideButtons(button, buttons);
+  }else{
+    panel.style.display = "none";
+    revealButtons(buttons);
+  }
+}
+
+function hideButtons(button, buttons){
+  for(var i = 0; i < buttons.length; i++){
+    if(buttons[i] != button){
+      buttons[i].style.display = "none";
+    }
+  }
+}
+
+function revealButtons(buttons){
+  for(var i = 0; i < buttons.length; i++){
+    buttons[i].style.display = "block";
+  }
+}
+
 
 
 
