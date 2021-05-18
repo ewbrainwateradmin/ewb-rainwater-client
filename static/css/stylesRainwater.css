@@ -190,9 +190,7 @@ hr { /*this is the place to edit that little line by the time thing*/
 
   /* c */
 
-  background: #ECECEC;
-  border: 2px solid #31859C;
-  box-sizing: border-box;
+  background: #31859C;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
@@ -206,7 +204,10 @@ hr { /*this is the place to edit that little line by the time thing*/
 
   /* f */
 
-  background: #31859C;
+  
+  background: #ECECEC;
+  border: 2px solid #31859C;
+  box-sizing: border-box;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border-radius: 5px;
 }
@@ -256,7 +257,7 @@ div.buttons a p.description {
   color: white;
 }
 
-.buttons .benefits div.button1 p {
+.buttons .rainwater div.button2 p {
   color: #31859C;
 }
 
@@ -631,9 +632,9 @@ div.text p.dummy-text{
 }
 #catchment{
   position: absolute;
-  width: 80px;
+  width: 70px;
   height: 40px;
-  left:502px;
+  left:500px;
   top:260px;
   right:378px;
   bottom:240px;
