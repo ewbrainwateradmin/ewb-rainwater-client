@@ -1,0 +1,608 @@
+
+html {
+  background: #E5E5E5;
+  zoom: 2;
+}
+body {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: -0.74%;
+  bottom: 0.74%;
+
+  background: #FFFFFF;
+}
+
+h1 { /*come back and look at the fonts here*/
+  position: relative;
+  top: 0px;
+  left: 70px;
+  width: 180px;
+
+  font-family: 'Encode Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #FFFFFF;
+}
+
+.header {
+  position: absolute;
+  width: 960px;
+  height: 56px;
+  left: 0px;
+  top: 0px;
+
+  background: #4B2E83;
+}
+
+h2 {
+  position: absolute;
+  width: 70px;
+  height: 36px;
+  left: 876px;
+  top: 0px;
+
+  font-family: 'Encode Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+hr { /*this is the place to edit that little line by the time thing*/
+  position: absolute;
+  width: 86px;
+  height: 0px;
+  left: 865px;
+  top: 20px;
+
+  /*border: 1px solid #FFFFFF;*/
+}
+
+.logo {
+  position: absolute;
+  width: 56px;
+  height: 37px;
+  left: 0px;
+  top: 10px;
+
+  background: url(W-Logo_White.png);
+}
+/* The sidebar */
+.sidenav {
+  position: absolute;
+  width: 215px;
+  height: 471px;
+  left: 5px;
+  top: 61px;
+
+  background: rgba(75, 46, 131, 0.3);
+  border-radius: 15px;
+  }
+/* Regular text that appears on the sidebar */
+.sidenav p.sidebar-text {
+
+  font-family: 'Encode Sans', sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+#top_nav_text {
+  position: absolute;
+  width: 214px;
+  height: 39px;
+  left: 5px;
+  top: 13px;
+}
+
+#bottom_nav_text {
+  position: absolute;
+  width: 181px;
+  height: 36px;
+  left: 22px;
+  top: 77px;
+}
+
+#nav_hr {
+  position: absolute;
+  width: 194px;
+  height: 0px;
+  left: 15px;
+  top: 80px;
+
+  /* c */
+
+  border: 1px solid #ECECEC;
+}
+
+#gallons {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 53px;
+  top: 160px;
+}
+
+#bathtubs {
+  position: absolute;
+  width: 119px;
+  height: 120px;
+  left: 53px;
+  top: 320px;
+}
+/* The square the goes around the data */
+.sidenav div.square {
+
+  background: #4B2E83;
+  /* c */
+
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
+  border-radius: 13px;
+}
+/* The words that go right under the numbers in the square */
+.sidenav div.square p.description {
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 20px;
+  line-height: 110%; /* different from sidebar-text */
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  margin-top: -5%; /* different from sidebar-text */
+  position: relative;
+  top: 20px;
+}
+/* The numbers inside the data square */
+.sidenav div.square p.number {
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 60px;
+  line-height: 110%;
+  font-weight: bold;
+  text-align: center;
+  color: #111;
+  margin-top: 0%;
+  top: 200px;
+  margin-bottom: 3%;
+  color: white;
+  position: relative;
+  top: 15px;
+}
+
+/*buttons:*/
+.buttons .benefits div.button1 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 310px;
+  top: 77px;
+
+  /* c */
+
+  background: #ECECEC;
+  border: 2px solid #31859C;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.buttons .rainwater div.button2 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 525px;
+  top: 77px;
+
+  /* f */
+
+  background: #31859C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.buttons .game div.button4 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 740px;
+  top: 77px;
+
+  background: #31859C;
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+/*the words "tap to" on the button*/
+.buttons a p.tapTo {
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: lowercase;
+  position: relative;
+  top: -7px;
+  color: white;
+
+}
+
+/*the description on the button*/
+div.buttons a p.description {
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  top: -15px;
+  color: white;
+}
+
+.buttons .benefits div.button1 p {
+  color: #31859C;
+}
+
+/*make the buttons change state when you hover over*/
+div.buttons div.button1:hover, div.buttons div.button2:hover, div.buttons div.button3:hover, div.buttons div.button4:hover{
+  /*background-color: #ECECEC;*/
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+/*
+div.buttons a p.description:hover, div.buttons a p.tapTo:hover {
+  color: #31859C;
+}
+*/
+/*text for dummy routing pages*/
+/*
+div.text p.dummy-text{
+  font-family: sans-serif;
+  font-size: 20px;
+  margin-top: 200px;
+  margin-left: 200px;
+}
+*/
+
+/*Benefits page buttons*/
+#floodingErosion, #floodingErosionBack{
+  position: absolute;
+  width: 256px;
+  height: 125px;
+  top: 216px;
+  left: 289px;
+
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 17px;
+  z-index: 2;
+}
+
+#waterDemand, #waterDemandBack{
+  position: absolute;
+  width: 256px;
+  height: 125px;
+  top: 363px;
+  left: 289px;
+
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 17px;
+
+  z-index: 2;
+}
+
+#money, #moneyBack{
+  position: absolute;
+  width: 256px;
+  height: 125px;
+  top: 216px;
+  left: 601px;
+
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 17px;
+  z-index: 2;
+}
+
+#pollution, #pollutionBack{
+  position: absolute;
+  width: 256px;
+  height: 125px;
+  top: 365px;
+  left: 601px;
+
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.5));
+  border-radius: 17px;
+  z-index: 2;
+}
+#reduces{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 0px;
+  top: 1px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+}
+
+#saves{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 130px;
+  top: 1px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+}
+
+#wallet{
+  position: absolute;
+  width: 98px;
+  height: 94px;
+  left: 12px;
+  top: 8px;
+
+  background: url(money.png);
+}
+
+#flood{
+  position: absolute;
+  width: 137px;
+  height: 85px;
+  left: 73px;
+  top: 16px;
+
+
+  background: url(flooding-erosion.png);
+}
+
+#demand{
+  position: absolute;
+  width: 90px;
+  height: 90px;
+  left: 0px;
+  top: 0px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+}
+
+#water{
+  position: absolute;
+  width: 89px;
+  height: 99px;
+  left: 121px;
+  top: 5px;
+
+  background: url(water.png);
+}
+
+#transportation{
+  position: absolute;
+  width: 98px;
+  height: 90px;
+  left: 121px;
+  top: 1px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+}
+
+#car{
+  position: absolute;
+  width: 137px;
+  height: 78px;
+  left: 14px;
+  top: 25px;
+
+  background: url(pollution-transportation.png);
+}
+
+#floodingErosionBackHead{
+  position: relative;
+  top: -15px;
+  left: 15px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+
+}
+
+#floodingErosionBackBody{
+  position: relative;
+
+  top: -25px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  /* "black" */
+
+  color: linear-gradient(0deg, #2E2A2A, #2E2A2A), linear-gradient(0deg, #A8C8C7, #A8C8C7), linear-gradient(0deg, #A8C8C7, #A8C8C7), #A8C8C7;
+}
+
+#moneyBack, #pollutionBack, #floodingErosionBack, #waterDemandBack{
+  background: #E5E5E5;
+  z-index: 1;
+}
+
+#moneyBackHead{
+  position: relative;
+  top: -15px;
+  left: 70px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+
+}
+
+#moneyBackBody{
+  position: relative;
+
+  top: -25px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  /* "black" */
+
+  color: linear-gradient(0deg, #2E2A2A, #2E2A2A), linear-gradient(0deg, #A8C8C7, #A8C8C7), linear-gradient(0deg, #A8C8C7, #A8C8C7), #A8C8C7;
+
+}
+
+
+#waterDemandBackHead{
+  position: relative;
+  top: -10px;
+  left: 35px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+
+}
+
+#waterDemandBackBody{
+  position: relative;
+
+  top: -25px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+
+  /* "black" */
+
+  color: linear-gradient(0deg, #2E2A2A, #2E2A2A), linear-gradient(0deg, #A8C8C7, #A8C8C7), linear-gradient(0deg, #A8C8C7, #A8C8C7), #A8C8C7;
+}
+
+#pollutionBackHead{
+  position: relative;
+  top: -15px;
+  left: 5px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 17px;
+  line-height: 20px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  color: #31859C;
+
+}
+
+#pollutionBackBody{
+  position: relative;
+
+  top: -25px;
+
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  line-height: 20px;
+  text-align: center;
+
+  /* "black" */
+
+  color: linear-gradient(0deg, #2E2A2A, #2E2A2A), linear-gradient(0deg, #A8C8C7, #A8C8C7), linear-gradient(0deg, #A8C8C7, #A8C8C7), #A8C8C7;
+}
