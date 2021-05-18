@@ -279,6 +279,8 @@ div.buttons div.button1:hover, div.buttons div.button2:hover, div.buttons div.bu
   left: 275px;
   font-size: 50px;
   z-index: 5;
+
+  font-family: 'Encode Sans';
 }
 
 #tap {
@@ -287,6 +289,8 @@ div.buttons div.button1:hover, div.buttons div.button2:hover, div.buttons div.bu
   left: 325px;
   font-size: 70px;
   z-index: 5;
+
+  font-family: 'Encode Sans';
 }
 
 .container{
