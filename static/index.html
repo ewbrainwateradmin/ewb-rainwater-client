@@ -21,18 +21,39 @@
         <div class="sidenav">
             <p class="sidebar-text">This building operates using rainwater.</p>
             <div class="square">
-                <p class="number">77</p>
+                <p id="number_gallons" class="number">0</p>
                 <p class="description">gallons</p>
             </div>
             <p class="sidebar-text">of water have been saved this month.</p>
             <hr>
             <p class="sidebar-text">That is the equivalent of</p>
             <div class="square">
-                <p class="number">582</p>
+                <p id="number_other" class="number">0</p>
                 <p class="description">water bottles</p>
             </div>
             <p class="sidebar-text">saved this month.</p>
         </div>
+        <!--Get information for sidebar from server-->
+        <script>
+        const got = require('got');
+
+        async function get_data() {
+          try {
+            const gallons_response = await got('http://ewb-rainwater-server:80/current_water_flow')
+            const gallons = gallons_response.body;
+            document.getElementById("number_gallons").innerHTML = gallons;
+
+            const other_response = await got('http://ewb-rainwater-server:80/current_water_bottles')
+            const amount = other_response.body;
+            document.getElementById("number_other").innerHTML = amount;
+          } catch (error) {
+            console.log(error.message);
+          }
+        }
+
+        setInterval(get_data, 5000)
+
+        </script>
         <!--Buttons:-->
         <div class="buttons">
             <a href="benefitsLink" class="benefits">
