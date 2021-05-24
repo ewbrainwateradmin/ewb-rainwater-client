@@ -279,6 +279,7 @@ div.buttons div.button1:hover, div.buttons div.button2:hover, div.buttons div.bu
   left: 275px;
   font-size: 50px;
   z-index: 5;
+  color: #000000;
 
   font-family: 'Encode Sans';
 }

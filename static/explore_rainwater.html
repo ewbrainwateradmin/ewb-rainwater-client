@@ -17,6 +17,13 @@
         <img class="logo" src="images/W-Logo_White.png" alt="Logo">
     </header>
     <body>
+        <script>
+        var time_out = setTimeout(() => {window.location.href = "landing_page.html";}, 2*60*1000)
+        document.onclick = function() {
+          clearTimeout(time_out)
+          time_out = setTimeout(() => {window.location.href = "landing_page.html";}, 2*60*1000)
+        }
+        </script>
         <!--Navigation Bar:-->
         <div class="sidenav">
             <p class="sidebar-text" id="top_nav_text">This Building Operates Using Rainwater.</p>
@@ -33,19 +40,19 @@
         </div>
         <!--Buttons:-->
         <div class="buttons">
-            <a href="benefitsLink" class="benefits">
+            <a href="benefits.html" class="benefits">
                 <div class="button1">
                     <p class="tapTo">tap to</p>
                     <p class="description">learn about the benefits</p>
                 </div>
             </a>
-            <a href="rainwaterLink" class="rainwater">
+            <a href="explore_rainwater.html" class="rainwater">
                 <div class="button2">
                     <p class="tapTo">tap to</p>
                     <p class="description">explore the rainwater system</p>
                 </div>
             </a>
-            <a href="gameLink" class="game">
+            <a href="play_game.html" class="game">
                 <div class="button4">
                     <p class="tapTo">tap to</p>
                     <p class="description">play the rainwater game</p>
@@ -55,29 +62,29 @@
     <!--Rainwater System-->
     <img class="rainwaterSystem" src="images/rainwaterSystem.png" alt="rainwater">
     <!--Catchment button-->
-    <div id="catchment" onclick="togglePanel('catchment', 'catchmentText')">
+    <div id="catchment" onclick="togglePanel('catchment', 'catchmentText')" style="display: block">
 
     </div>
     <!--Catchment panel-->
-    <div id="catchmentText">
+    <div id="catchmentText" style="display: none">
         <p id="catchmentHeader">
             catchment system
         </p>
         <div id="arrow1">
             <img class="arrow" src="images/arrow.png" alt="arrow">
         </div>
-        
+
         <p id="catchmentBody">
             Storm drains on the roof of the building have sufficient water diverted to the rainwater cistern to be used for rainwater filtration.
             The rest is diverted to the city waste system, connected under the building.
         </p>
     </div>
     <!--Daytank button-->
-    <div id="daytank" onclick="togglePanel('daytank', 'daytankText')">
+    <div id="daytank" onclick="togglePanel('daytank', 'daytankText')" style="display: block">
 
     </div>
     <!--Daytank panel-->
-    <div id="daytankText">
+    <div id="daytankText" style="display: none">
         <p id="daytankHeader">
             day tank
         </p>
@@ -89,11 +96,11 @@
         </p>
     </div>
     <!--treatment button-->
-    <div id="treatment" onclick="togglePanel('treatment', 'treatmentText')">
+    <div id="treatment" onclick="togglePanel('treatment', 'treatmentText')" style="display: block">
 
     </div>
     <!--treatment panel-->
-    <div id="treatmentText">
+    <div id="treatmentText" style="display: none">
         <p id="treatmentHeader">
             treatment skid
         </p>
@@ -106,12 +113,12 @@
     </div>
 
     <!--cistern button-->
-    <div id="cistern" onclick="togglePanel('cistern', 'cisternText')">
+    <div id="cistern" onclick="togglePanel('cistern', 'cisternText')" style="display: block">
 
     </div>
 
     <!--cistern panel-->
-    <div id="cisternText">
+    <div id="cisternText" style="display: none">
         <p id="cisternHeader">
             cistern
         </p>
@@ -129,7 +136,7 @@
     </div>
 
     <!--flow meter panel-->
-    <div id="flowMeterText">
+    <div id="flowMeterText" style="display: none">
         <p id="flowMeterHeader">
             flow meter
         </p>
