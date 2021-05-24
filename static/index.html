@@ -4,7 +4,6 @@
         <meta charset="utf-8">
         <title>Hans Rosling Center for Population Health</title>
         <link rel="stylesheet" href="css/styles.css">
-        <script src="src/index.js"></script>
         <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
     </head>
     <!--Header:-->
@@ -35,8 +34,16 @@
         </div>
         <!--Get information for sidebar from server-->
         <script>
-        const got = require('got');
+        var xhttp = new XMLHttpRequest();
+        xhttp.onreadystatechange = function() {
+          if (this.readyState == 4 && this.status == 200) {
+            document.getElementById("number_gallons").innerHTML = xhttp.responseText;
+          }
+        };
+        xhttp.open("GET", "http://ewb-rainwater-server:80/current_water_flow", true);
+        xhttp.send();
 
+        /*
         async function get_data() {
           try {
             const gallons_response = await got('http://ewb-rainwater-server:80/current_water_flow')
@@ -50,9 +57,8 @@
             console.log(error.message);
           }
         }
-
         setInterval(get_data, 5000)
-
+        */
         </script>
         <!--Buttons:-->
         <div class="buttons">
