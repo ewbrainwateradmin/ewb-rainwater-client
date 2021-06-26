@@ -2,21 +2,24 @@
 const express = require('express');
 const path = require('path');
 const got = require('got');
+const fs = require("fs")
 const app = express();
 
 // Set static folder
 // for static server, routes end in .html (ie http://localhost:5500/home.html)
 app.use(express.static(path.join(__dirname, 'static')));
 
-(async () => {
+async function get_data() {
   try {
-    // Take out manual port entry
-    const response = await got('http://ewb-rainwater-server:80/current_dollars')
-    console.log(response.body)
+    cons response = await got('http://ewb-rainwater-server:80/current_water_flow')
+    fs.writeFile(path.resolve(__dirname, "water.txt"), response.body, (err) => {
+      if (err) throw err
+    })
   } catch (error) {
     console.log(error.message);
   }
-})();
+}
+setInterval(get_data, 5000)
 
 // set up main page
 app.get('/',function(req, res){

@@ -34,15 +34,18 @@
         </div>
         <!--Get information for sidebar from server-->
         <script>
+
+        /*
         var xhttp = new XMLHttpRequest();
         xhttp.onreadystatechange = function() {
           if (this.readyState == 4 && this.status == 200) {
             document.getElementById("number_gallons").innerHTML = xhttp.responseText;
           }
         };
-        xhttp.open("GET", "http://ewb-rainwater-server:80/current_water_flow", true);
+        xhttp.open("GET", "https://localhost:80/current_water_flow", async=true);
         xhttp.send();
-
+        */
+        
         /*
         async function get_data() {
           try {
