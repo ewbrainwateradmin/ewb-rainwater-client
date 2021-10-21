@@ -49,4 +49,3 @@ function toggleText(id,id2) {
       }
     }
 }
-

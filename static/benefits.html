@@ -17,6 +17,13 @@
         <img class="logo" src="images/W-Logo_White.png" alt="Logo">
     </header>
     <body>
+        <script>
+        var time_out = setTimeout(() => {window.location.href = "landing_page.html";}, 2*60*1000)
+        document.onclick = function() {
+          clearTimeout(time_out)
+          time_out = setTimeout(() => {window.location.href = "landing_page.html";}, 2*60*1000)
+        }
+        </script>
         <!--Navigation Bar:-->
         <div class="sidenav">
             <p class="sidebar-text" id="top_nav_text">This Building Operates Using Rainwater.</p>
@@ -33,19 +40,19 @@
         </div>
         <!--Buttons:-->
         <div class="buttons">
-            <a href="benefitsLink" class="benefits">
+            <a href="benefits.html" class="benefits">
                 <div class="button1">
                     <p class="tapTo">tap to</p>
                     <p class="description">learn about the benefits</p>
                 </div>
             </a>
-            <a href="rainwaterLink" class="rainwater">
+            <a href="explore_rainwater.html" class="rainwater">
                 <div class="button2">
                     <p class="tapTo">tap to</p>
                     <p class="description">explore the rainwater system</p>
                 </div>
             </a>
-            <a href="gameLink" class="game">
+            <a href="play_game.html" class="game">
                 <div class="button4">
                     <p class="tapTo">tap to</p>
                     <p class="description">play the rainwater game</p>
