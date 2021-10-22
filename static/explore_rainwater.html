@@ -5,6 +5,27 @@
         <title>Hans Rosling Center for Population Health</title>
         <link rel="stylesheet" href="css/stylesRainwater.css">
         <script src="src/index.js"></script>
+        <script>
+          function getTimeAndDate() {
+              var currentTime = document.getElementById("time");
+              const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+              var d = new Date();
+              var h = d.getHours();
+              var m = d.getMinutes();
+              var date = monthNames[d.getMonth()] + " " + d.getDate();
+              var am = "AM";
+              if (h > 12) {
+                  h = h - 12;
+                  var am = "PM";
+              }
+              h = h < 10 ? "0" + h : h;
+              m = m < 10 ? "0" + m : m;
+              currentTime.innerHTML = date +"\n" + h + ":" + m + " " + am;
+          }
+
+          var interval = setInterval(getTimeAndDate, 1000);
+        </script>
         <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
     </head>
     <!--Header:-->
@@ -12,7 +33,7 @@
         <div class = "header">
         </div>
         <h1>HANS ROSLING CENTER for POPULATION HEALTH</h1>
-        <h2>Feb 17 11:30 AM</h2>
+        <h2 id="time"></h2>
         <hr id="top_bar_hr">
         <img class="logo" src="images/W-Logo_White.png" alt="Logo">
     </header>
