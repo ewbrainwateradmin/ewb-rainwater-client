@@ -1,0 +1,646 @@
+html {
+  background: #E5E5E5;
+  zoom: 2;
+}
+body {
+  position: absolute;
+  left: 0%;
+  right: 0%;
+  top: -0.74%;
+  bottom: 0.74%;
+
+  background: #FFFFFF;
+}
+
+h1 { /*come back and look at the fonts here*/
+  position: absolute;
+  top: 0px;
+  left: 70px;
+  /*left: 70px;*/
+  width: 180px;
+
+  font-family: 'Encode Sans';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #FFFFFF;
+}
+
+.header {
+  position: absolute;
+  width: 960px;
+  height: 56px;
+  left: 0px;
+  top: 0px;
+
+  background: #4B2E83;
+}
+
+h2 {
+  position: absolute;
+  width: 70px;
+  height: 36px;
+  left: 876px;
+  top: 0px;
+
+  font-family: 'Encode Sans';
+  font-style: normal;
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 17px;
+  text-align: center;
+
+  color: #FFFFFF;
+}
+
+hr { /*this is the place to edit that little line by the time thing*/
+  position: absolute;
+  width: 86px;
+  height: 0px;
+  left: 865px;
+  top: 20px;
+
+  /*border: 1px solid #FFFFFF;*/
+}
+
+.logo {
+  position: absolute;
+  width: 56px;
+  height: 37px;
+  left: 0px;
+  top: 10px;
+
+  background: url(W-Logo_White.png);
+}
+/* The sidebar */
+.sidenav {
+  position: absolute;
+  width: 215px;
+  height: 471px;
+  left: 5px;
+  top: 61px;
+
+  background: rgba(75, 46, 131, 0.3);
+  border-radius: 15px;
+  z-index: 3;
+  }
+/* Regular text that appears on the sidebar */
+.sidenav p.sidebar-text {
+
+  font-family: 'Encode Sans', sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: capitalize;
+
+  color: #FFFFFF;
+
+  text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.4);
+}
+
+#top_nav_text {
+  position: absolute;
+  width: 214px;
+  height: 39px;
+  left: 5px;
+  top: 13px;
+}
+
+#bottom_nav_text {
+  position: absolute;
+  width: 181px;
+  height: 36px;
+  left: 22px;
+  top: 77px;
+}
+
+#comming_soon_sidebar {
+  position:  absolute;
+  width: 200px;
+  height: 300px;
+  line-height: 110%;
+  left: 10px;
+  top: 180px;
+  font-size: 46px;
+  text-align: center;
+}
+
+#nav_hr {
+  position: absolute;
+  width: 194px;
+  height: 0px;
+  left: 15px;
+  top: 80px;
+
+  /* c */
+
+  border: 1px solid #ECECEC;
+}
+
+#gallons {
+  position: absolute;
+  width: 120px;
+  height: 120px;
+  left: 53px;
+  top: 160px;
+}
+
+#bathtubs {
+  position: absolute;
+  width: 119px;
+  height: 120px;
+  left: 53px;
+  top: 320px;
+}
+/* The square the goes around the data */
+.sidenav div.square {
+
+  background: #4B2E83;
+  /* c */
+
+  border: 1px solid #ECECEC;
+  box-sizing: border-box;
+  border-radius: 13px;
+}
+/* The words that go right under the numbers in the square */
+.sidenav div.square p.description {
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 20px;
+  line-height: 110%; /* different from sidebar-text */
+  font-weight: 400;
+  text-align: center;
+  color: white;
+  margin-top: -5%; /* different from sidebar-text */
+  position: relative;
+  top: 20px;
+}
+/* The numbers inside the data square */
+.sidenav div.square p.number {
+  font-family: 'Encode Sans', sans-serif;
+  font-size: 60px;
+  line-height: 110%;
+  font-weight: bold;
+  text-align: center;
+  color: #111;
+  margin-top: 0%;
+  top: 200px;
+  margin-bottom: 3%;
+  color: white;
+  position: relative;
+  top: 15px;
+}
+
+/*buttons:*/
+.buttons .benefits div.button1 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 310px;
+  top: 77px;
+
+  /* c */
+
+  background: #ECECEC;
+  border: 2px solid #31859C;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.buttons .rainwater div.button2 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 525px;
+  top: 77px;
+
+  /* f */
+
+  background: #31859C;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+.buttons .game div.button4 {
+  position: absolute;
+  width: 125px;
+  height: 125px;
+  left: 740px;
+  top: 77px;
+
+  background: #31859C;
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border-radius: 5px;
+}
+
+/*the words "tap to" on the button*/
+.buttons a p.tapTo {
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 22px;
+  text-align: center;
+  text-transform: lowercase;
+  position: relative;
+  top: -7px;
+  color: white;
+
+}
+
+/*the description on the button*/
+div.buttons a p.description {
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 22px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  text-transform: capitalize;
+  position: relative;
+  top: -15px;
+  color: white;
+}
+
+.buttons .benefits div.button1 p {
+  color: #31859C;
+}
+
+/*make the buttons change state when you hover over*/
+div.buttons div.button1:hover, div.buttons div.button2:hover, div.buttons div.button3:hover, div.buttons div.button4:hover{
+  /*background-color: #ECECEC;*/
+  border: 1px solid #31859C;
+  box-sizing: border-box;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+#slogan {
+  position: absolute;
+  top: 170px;
+  left: 275px;
+  font-size: 50px;
+  z-index: 5;
+  color: #000000;
+
+  font-family: 'Encode Sans';
+}
+
+#tap {
+  position: absolute;
+  top: 210px;
+  left: 325px;
+  font-size: 70px;
+  z-index: 5;
+
+  font-family: 'Encode Sans';
+}
+
+.container{
+  z-index: 0;
+  position: absolute;
+  top:50px;
+  left: 150px;
+	width: 100%;
+	height: 100%;
+  min-width: 600px;
+	max-width: 800px;
+	max-height: 500px;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(3, 1fr);
+  opacity: 75%;
+}
+
+.row{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.rain{
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+.rain:nth-of-type(1){
+	--duration: 2.7s;
+	--delay: 1s;
+	transform: translate(10%, 10%) scale(0.9);
+}
+
+.rain:nth-of-type(2){
+	--duration: 2.1s;
+	--delay: 1.2s;
+	transform: translate(-20%, 40%) scale(1.3);
+}
+
+.rain:nth-of-type(3){
+	--duration: 2.3s;
+	--delay: 2s;
+	transform: translate(0%, 50%) scale(1.1);
+}
+
+.rain:nth-of-type(4){
+	--duration: 2s;
+	--delay: 4s;
+	transform: translate(0%, -10%) scale(1.2);
+}
+
+.rain:nth-of-type(5){
+	--duration: 2.5s;
+	--delay: 0s;
+	transform: translate(10%, 0%) scale(0.9);
+}
+
+.rain:nth-of-type(6){
+	--duration: 2s;
+	--delay: 2.7s;
+	transform: translate(-20%, 0%) scale(1);
+}
+
+.rain:nth-of-type(7){
+	--duration: 1.8s;
+	--delay: 1.3s;
+	transform: translate(20%, -40%) scale(1.2);
+}
+
+.rain:nth-of-type(8){
+	--duration: 2.2s;
+	--delay: 0s;
+	transform: translate(20%, 0%) scale(1);
+}
+
+.rain:nth-of-type(9){
+	--duration: 2s;
+	--delay: 0.5s;
+	transform: translate(0%, -10%) scale(1.3);
+}
+
+.drop{
+	background-color: #31859C;
+	width: 3px;
+	height: 100px;
+	position: absolute;
+	top: calc(50% - 100px);
+	left: calc(50% - 1.5px);
+	animation-name: fall;
+	animation-duration: var(--duration);
+	animation-delay: var(--delay);
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-in;
+	animation-fill-mode: backwards;
+}
+
+@keyframes fall{
+	0%{
+		transform: translateY(-120vh);
+	}
+	45%{
+		transform: translateY(0%);
+		opacity: 1;
+	}
+	46%{
+		opacity: 0;
+	}
+	100%{
+		opacity: 0;
+	}
+}
+
+.waves > div{
+	position: absolute;
+	top:0px;
+	left: 0px;
+	right: 0px;
+	bottom: 0px;
+	border-radius: 50%;
+	border: solid #31859C;
+	animation-name: spread;
+	animation-duration: var(--duration);
+	animation-delay: var(--delay);
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards;
+}
+
+.waves > div:nth-child(2){
+	animation-delay: calc(var(--delay) + 0.3s);
+	animation-timing-function: linear;
+}
+
+@keyframes spread{
+	0%{
+		transform: scale(0);
+		opacity: 1;
+	}
+	40%{
+		transform: scale(0);
+		opacity: 1;
+	}
+
+	100%{
+		transform: scale(1);
+		opacity: 0;
+	}
+}
+
+
+.splash{
+	position: absolute;
+	top: 10%;
+	bottom: 50%;
+	left: 35%;
+	right: 35%;
+	border-radius: 8px;
+	clip-path: ellipse(10% 20% at 50% 50%);
+	background-color: #31859C;
+	transform-origin: bottom;
+	animation-name: splash;
+	animation-duration: var(--duration);
+	animation-delay: var(--delay);
+	animation-iteration-count: infinite;
+	animation-timing-function: ease-out;
+	animation-fill-mode: backwards;
+}
+
+@keyframes splash{
+	0%{
+		transform: scale(0.3, 0);
+	}
+
+	49%{
+		transform: scale(0.3, 0);
+	}
+
+	50%{
+		transform: scale(0.3, 0.3);
+	}
+
+	60%{
+		transform: scale(0.7, 1);
+	}
+
+	90%{
+		transform: scale(1, 0);
+	}
+
+	100%{
+		transform: scale(1, 0);
+	}
+}
+
+.particles > div{
+	position: absolute;
+	border-radius: 100%;
+	background-color: #31859C;
+	animation-duration: var(--duration);
+	animation-delay: var(--delay);
+	animation-iteration-count: infinite;
+	animation-timing-function: ease;
+	animation-fill-mode: backwards;
+}
+
+.particles > div:nth-child(1){
+	width: 7px;
+	height: 7px;
+	top: 50%;
+	left: 50%;
+	animation-name: jumpLeft;
+}
+
+.particles > div:nth-child(2){
+	width: 5px;
+	height: 5px;
+	top: 30%;
+	left: 50%;
+	animation-name: jumpLeft;
+	animation-delay: calc(var(--delay) + 0.1s);
+}
+
+.particles > div:nth-child(3){
+	width: 3px;
+	height: 3px;
+	top: 20%;
+	left: 70%;
+	animation-name: jumpRight;
+	animation-delay: calc(var(--delay) + 0.15s);
+}
+
+.particles > div:nth-child(4){
+	width: 5px;
+	height: 5px;
+	top: 30%;
+	left: 50%;
+	animation-name: jumpRight;
+	animation-delay: calc(var(--delay) + 0.3s);
+}
+
+@keyframes jumpLeft{
+	0%{
+		transform: translate(0,0) scale(0);
+	}
+
+	45%{
+		transform: translate(0,0) scale(0);
+	}
+
+	60%{
+		transform: translate(-50px, -90px) scale(1);
+	}
+
+	100%{
+		transform: translate(-60px, 0px) scale(0.1);
+	}
+}
+
+@keyframes jumpRight{
+	0%{
+		transform: translate(0,0) scale(0);
+	}
+
+	45%{
+		transform: translate(0,0) scale(0);
+	}
+
+	60%{
+		transform: translate(30px, -80px) scale(1);
+	}
+
+	100%{
+		transform: translate(50px, 0px) scale(0.1);
+	}
+}
+
+.shimmer {
+  text-align: center;
+  color: rgba(255,255,255,0.1);
+
+  background: -webkit-gradient(linear, left top, right bottom, from(#222), to(#222), color-stop(0.5, #DFDFDF));
+
+  background: -moz-gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+
+  background: gradient(linear, left top, right top, from(#222), to(#222), color-stop(0.5, #fff));
+
+  -webkit-background-size: 125px 100%;
+  -moz-background-size: 125px 100%;
+  background-size: 125px 100%;
+  -webkit-background-clip: text;
+  -moz-background-clip: text;
+  background-clip: text;
+  -webkit-animation-name: shimmer;
+  -moz-animation-name: shimmer;
+  animation-name: shimmer;
+  -webkit-animation-duration: 3s;
+  -moz-animation-duration: 3s;
+  animation-duration: 3s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  background-repeat: no-repeat;
+  background-position: 0 0;
+  background-color: #222;
+}
+
+@-moz-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-webkit-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@-o-keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
+@keyframes shimmer {
+  0% {
+    background-position: top left;
+  }
+  100% {
+    background-position: top right;
+  }
+}
