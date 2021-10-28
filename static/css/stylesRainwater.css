@@ -115,6 +115,17 @@ hr { /*this is the place to edit that little line by the time thing*/
   top: 77px;
 }
 
+#comming_soon_sidebar {
+  position:  absolute;
+  width: 200px;
+  height: 300px;
+  line-height: 110%;
+  left: 10px;
+  top: 180px;
+  font-size: 46px;
+  text-align: center;
+}
+
 #nav_hr {
   position: absolute;
   width: 194px;
@@ -204,7 +215,7 @@ hr { /*this is the place to edit that little line by the time thing*/
 
   /* f */
 
-  
+
   background: #ECECEC;
   border: 2px solid #31859C;
   box-sizing: border-box;
@@ -441,13 +452,13 @@ div.buttons div.button1:hover, div.buttons div.button2:hover, div.buttons div.bu
 
   top:40px;
   left:7px;
-  
+
   font-family: Encode Sans;
   font-style: normal;
   font-weight: normal;
   font-size: 11px;
   line-height: 14px;
-  
+
   color: #31859C;
 }
 
@@ -542,7 +553,7 @@ div.buttons div.button1:hover, div.buttons div.button2:hover, div.buttons div.bu
   position: absolute;
   width: 149px;
   height: 29px;
-  
+
   background: #ADCBCA;
   border: 1px solid #31859C;
   box-sizing: border-box;
@@ -649,7 +660,7 @@ div.buttons div.button1:hover, div.buttons div.button2:hover, div.buttons div.bu
   position: absolute;
   width: 149px;
   height: 29px;
-  
+
   background: #5E9B92;
   border: 1px solid #31859C;
   box-sizing: border-box;
