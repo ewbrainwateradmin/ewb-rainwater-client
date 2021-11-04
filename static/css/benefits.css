@@ -356,16 +356,16 @@ div.text p.dummy-text{
 }
 #reduces{
   position: absolute;
-  width: 90px;
+  width: 100px;
   height: 90px;
   left: 0px;
   top: 1px;
 
   font-family: Encode Sans;
   font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 25px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -375,16 +375,16 @@ div.text p.dummy-text{
 
 #saves{
   position: absolute;
-  width: 90px;
-  height: 90px;
+  width: 109px;
+  height: 100px;
   left: 130px;
-  top: 1px;
+  top: -15px;
 
   font-family: Encode Sans;
   font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  font-weight: 900;
+  font-size: 30px;
+  line-height: 20px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -406,7 +406,7 @@ div.text p.dummy-text{
   position: absolute;
   width: 137px;
   height: 85px;
-  left: 73px;
+  left: 100px;
   top: 16px;
 
 
@@ -417,14 +417,14 @@ div.text p.dummy-text{
   position: absolute;
   width: 90px;
   height: 90px;
-  left: 0px;
-  top: 0px;
+  left: 25px;
+  top: -10px;
 
   font-family: Encode Sans;
   font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  font-weight: 900;
+  font-size: 25px;
+  line-height: 25px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -436,8 +436,8 @@ div.text p.dummy-text{
   position: absolute;
   width: 89px;
   height: 99px;
-  left: 121px;
-  top: 5px;
+  left: 145px;
+  top: 12px;
 
   background: url(water.png);
 }
@@ -446,14 +446,14 @@ div.text p.dummy-text{
   position: absolute;
   width: 98px;
   height: 90px;
-  left: 121px;
+  left: 150px;
   top: 1px;
 
   font-family: Encode Sans;
   font-style: normal;
-  font-weight: 600;
-  font-size: 14px;
-  line-height: 17px;
+  font-weight: 900;
+  font-size: 20px;
+  line-height: 20px;
   display: flex;
   align-items: center;
   text-align: center;
@@ -532,12 +532,12 @@ div.text p.dummy-text{
 #moneyBackBody{
   position: relative;
 
-  top: -25px;
+  top: -20px;
 
   font-family: Encode Sans;
   font-style: normal;
   font-weight: normal;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 20px;
   text-align: center;
 
@@ -586,7 +586,7 @@ div.text p.dummy-text{
 #pollutionBackHead{
   position: relative;
   top: -15px;
-  left: 5px;
+  left: 35px;
 
   font-family: Encode Sans;
   font-style: normal;
