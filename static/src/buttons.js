@@ -6,7 +6,7 @@ function togglePanel(id,panelId){
 
   let buttons = [document.getElementById("catchment"), document.getElementById("daytank"), document.getElementById("treatment"), document.getElementById("cistern"), document.getElementById("flowMeter")];
   let panels = [document.getElementById("catchmentText"), document.getElementById("daytankText"), document.getElementById("treatmentText"), document.getElementById("cisternText"), document.getElementById("flowMeterText")];
-  
+
   if(panel.style.display == "none"){
     panel.style.display = "block";
     //hideButtons(button, buttons);
@@ -23,9 +23,9 @@ function PanelsOff(){
   let panels = [document.getElementById("catchmentText"), document.getElementById("daytankText"), document.getElementById("treatmentText"), document.getElementById("cisternText"), document.getElementById("flowMeterText")];
   for(var i = 0; i < panels.length; i++){
     if (panels[i].style.display != "none") {
-	panels[i].style.display = "none";
-	console.log("test panelsoff");
-    } 
+    	panels[i].style.display = "none";
+    	console.log("test panelsoff");
+    }
   }
 }
 
@@ -34,7 +34,7 @@ function hideButtons(button, buttons){
   for(var i = 0; i < buttons.length; i++){
     if(buttons[i] != button){
       buttons[i].style.display = "none";
-	console.log("test hidebuttons");
+    	console.log("test hidebuttons");
     }
   }
 }
