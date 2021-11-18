@@ -1,17 +1,7 @@
-
 html {
   background: #FFFFFF;
   zoom: 2;
 }
-/* body {
-  position: absolute;
-  left: 0%;
-  right: 0%;
-  top: -0.74%;
-  bottom: 0.74%;
-
-  background: #FFFFFF;
-} */
 
 .header {
   position: fixed;
@@ -25,12 +15,13 @@ html {
 }
 
 h1 { /*come back and look at the fonts here*/
-  position: fixed;
-  top: 0px;
-  left: 70px;
+  position: absolute;
+  text-align: left;
   width: 180px;
+  left: 70px;
+  top: 0%;
 
-  font-family: 'Encode Sans';
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: 900;
   font-size: 15px;
@@ -39,29 +30,12 @@ h1 { /*come back and look at the fonts here*/
   color: #FFFFFF;
 }
 
-/* .header {
-  position: absolute;
-  width: 960px;
-  height: 56px;
-  left: 0px;
-  top: 0px;
-
-  background: #4B2E83;
-} */
-
 h2 {
-  position: absolute;
-  width: 70px;
-  height: 36px;
-  left: 876px;
-  top: 0px;
-
-  font-family: 'Encode Sans';
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  text-align: center;
 
   color: #FFFFFF;
 }
@@ -83,11 +57,11 @@ h2 {
 }
 
 #time {
-  position: fixed;
+  position: absolute;
   text-align: center;
   width: 70px;
   right: 10px;
-  top: 0px;
+  top: 18px;
 }
 
 hr { /*this is the place to edit that little line by the time thing*/

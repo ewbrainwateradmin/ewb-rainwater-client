@@ -5,38 +5,41 @@
         <title>Hans Rosling Center for Population Health</title>
         <link rel="stylesheet" href="css/benefits.css">
         <script src="src/buttons.js"></script>
-        <script>
-          function getTimeAndDate() {
-              var currentTime = document.getElementById("time");
-              const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
-
-              var d = new Date();
-              var h = d.getHours();
-              var m = d.getMinutes();
-              var date = monthNames[d.getMonth()] + " " + d.getDate();
-              var am = "AM";
-              if (h > 12) {
-                  h = h - 12;
-                  var am = "PM";
-              }
-              h = h < 10 ? "0" + h : h;
-              m = m < 10 ? "0" + m : m;
-              currentTime.innerHTML = date +"\n" + h + ":" + m + " " + am;
-          }
-
-          var interval = setInterval(getTimeAndDate, 1000);
-        </script>
         <link href="https://fonts.googleapis.com/css2?family=Encode+Sans&display=swap" rel="stylesheet">
     </head>
     <!--Header:-->
     <header>
         <div class = "header">
+          <h1>HANS ROSLING CENTER for POPULATION HEALTH</h1>
+          <h2 id="date"></h2>
+          <hr id="header_hr">
+          <h2 id="time"></h2>
+          <img class="logo" src="images/W-Logo_White.png" alt="Logo">
         </div>
-        <h1>HANS ROSLING CENTER for POPULATION HEALTH</h1>
-        <h2 id="time"></h2>
-        <hr id="top_bar_hr">
-        <img class="logo" src="images/W-Logo_White.png" alt="Logo">
     </header>
+    <script>
+      function getTimeAndDate() {
+          var currentDate = document.getElementById("date");
+          var currentTime = document.getElementById("time");
+          const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+
+          var d = new Date();
+          var h = d.getHours();
+          var m = d.getMinutes();
+          var date = monthNames[d.getMonth()] + " " + d.getDate();
+          var am = "AM";
+          if (h > 12) {
+              h = h - 12;
+              var am = "PM";
+          }
+          h = h < 10 ? "0" + h : h;
+          m = m < 10 ? "0" + m : m;
+          currentDate.innerHTML = date;
+          currentTime.innerHTML = h + ":" + m + " " + am;
+      }
+      getTimeAndDate()
+      var interval = setInterval(getTimeAndDate, 1000);
+    </script>
     <body>
         <script>
         var time_out = setTimeout(() => {window.location.href = "landing_page.html";}, 2*60*1000)
@@ -64,9 +67,9 @@
         </div>
         <!--Buttons:-->
         <div class="buttons">
-            <a href="benefits.html" class="benefits"> 
-               	 <div class="button1"> 
-                    <p class="tapTo">tap to</p> 
+            <a href="benefits.html" class="benefits">
+               	 <div class="button1">
+                    <p class="tapTo">tap to</p>
                     <p class="description">learn about the benefits</p>
                 </div>
             </a>

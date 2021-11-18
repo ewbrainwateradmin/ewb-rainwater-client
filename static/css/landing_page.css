@@ -3,15 +3,6 @@ html {
   zoom: 2;
 }
 
-/* body {
-  position: relative;
-  width: 960px;
-  height: 540px;
-  top: 0px;
-  left: 0px;
-  background: #FFFFFF;
-} */
-
 .header {
   position: fixed;
   text-align: center;

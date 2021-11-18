@@ -2,22 +2,10 @@ html {
   background: #FFFFFF;
   zoom: 2;
 }
-h1 { /*come back and look at the fonts here*/
-  position: fixed;
-  left: 70px;
-  width: 180px;
-  top: 0px;
-  font-family: 'Encode Sans';
-  font-style: normal;
-  font-weight: 900;
-  font-size: 15px;
-  line-height: 19px;
-
-  color: #FFFFFF;
-}
 
 .header {
   position: fixed;
+  text-align: center;
   width: 100%;
   height: 55px;
   left: 0px;
@@ -26,19 +14,28 @@ h1 { /*come back and look at the fonts here*/
   background: #4B2E83;
 }
 
-h2 {
+h1 { /*come back and look at the fonts here*/
   position: absolute;
-  width: 70px;
-  height: 36px;
-  left: 876px;
-  top: 0px;
+  text-align: left;
+  width: 180px;
+  left: 70px;
+  top: 0%;
 
-  font-family: 'Encode Sans';
+  font-family: Encode Sans;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 15px;
+  line-height: 19px;
+
+  color: #FFFFFF;
+}
+
+h2 {
+  font-family: Encode Sans;
   font-style: normal;
   font-weight: 600;
   font-size: 14px;
   line-height: 17px;
-  text-align: center;
 
   color: #FFFFFF;
 }
@@ -73,7 +70,8 @@ hr { /*this is the place to edit that little line by the time thing*/
 
   background: rgb(200, 192, 218);
   border-radius: 15px;
-  }
+}
+
 #date {
   position: absolute;
   text-align: center;
@@ -91,11 +89,11 @@ hr { /*this is the place to edit that little line by the time thing*/
 }
 
 #time {
-  position: fixed;
+  position: absolute;
   text-align: center;
   width: 70px;
   right: 10px;
-  top: 0px;
+  top: 18px;
 }
 /* Regular text that appears on the sidebar */
 .sidenav p.sidebar-text {
