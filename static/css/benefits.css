@@ -64,16 +64,6 @@ h2 {
   top: 18px;
 }
 
-hr { /*this is the place to edit that little line by the time thing*/
-  position: fixed;
-  width: 86px;
-  height: 0px;
-  left: 865px;
-  top: 20px;
-
-  /*border: 1px solid #FFFFFF;*/
-}
-
 .logo {
   position: fixed;
   width: 56px;
