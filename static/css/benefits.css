@@ -1,9 +1,9 @@
 
 html {
-  background: #E5E5E5;
+  background: #FFFFFF;
   zoom: 2;
 }
-body {
+/* body {
   position: absolute;
   left: 0%;
   right: 0%;
@@ -11,10 +11,21 @@ body {
   bottom: 0.74%;
 
   background: #FFFFFF;
+} */
+
+.header {
+  position: fixed;
+  text-align: center;
+  width: 100%;
+  height: 55px;
+  left: 0px;
+  top: 0px;
+
+  background: #4B2E83;
 }
 
 h1 { /*come back and look at the fonts here*/
-  position: relative;
+  position: fixed;
   top: 0px;
   left: 70px;
   width: 180px;
@@ -28,7 +39,7 @@ h1 { /*come back and look at the fonts here*/
   color: #FFFFFF;
 }
 
-.header {
+/* .header {
   position: absolute;
   width: 960px;
   height: 56px;
@@ -36,7 +47,7 @@ h1 { /*come back and look at the fonts here*/
   top: 0px;
 
   background: #4B2E83;
-}
+} */
 
 h2 {
   position: absolute;
@@ -55,8 +66,32 @@ h2 {
   color: #FFFFFF;
 }
 
-hr { /*this is the place to edit that little line by the time thing*/
+#date {
   position: absolute;
+  text-align: center;
+  width: 70px;
+  right: 10px;
+}
+
+#header_hr {
+  position: absolute;
+  top: 21px;
+  right: 7px;
+  width: 78px;
+
+  border: .5px solid #ECECEC;
+}
+
+#time {
+  position: fixed;
+  text-align: center;
+  width: 70px;
+  right: 10px;
+  top: 0px;
+}
+
+hr { /*this is the place to edit that little line by the time thing*/
+  position: fixed;
   width: 86px;
   height: 0px;
   left: 865px;
@@ -66,7 +101,7 @@ hr { /*this is the place to edit that little line by the time thing*/
 }
 
 .logo {
-  position: absolute;
+  position: fixed;
   width: 56px;
   height: 37px;
   left: 0px;
@@ -76,15 +111,17 @@ hr { /*this is the place to edit that little line by the time thing*/
 }
 /* The sidebar */
 .sidenav {
-  position: absolute;
+  position: fixed;
+  text-align: center;
   width: 215px;
-  height: 471px;
+  height: 475px;
   left: 5px;
-  top: 61px;
+  top: 60px;
+  z-index: 5;
 
-  background: rgba(75, 46, 131, 0.3);
+  background: rgb(200, 192, 218);
   border-radius: 15px;
-  }
+}
 /* Regular text that appears on the sidebar */
 .sidenav p.sidebar-text {
 
@@ -103,28 +140,21 @@ hr { /*this is the place to edit that little line by the time thing*/
 
 #top_nav_text {
   position: absolute;
-  width: 214px;
-  height: 39px;
-  left: 5px;
-  top: 13px;
+  width: 215px;
+  left: 0%;
 }
 
 #bottom_nav_text {
   position: absolute;
-  width: 181px;
-  height: 36px;
-  left: 22px;
-  top: 77px;
+  width: 215px;
+  top: 60px;
 }
 
 #nav_hr {
   position: absolute;
-  width: 194px;
-  height: 0px;
-  left: 15px;
-  top: 80px;
-
-  /* c */
+  top: 63px;
+  left: 5px;
+  width: 205px;
 
   border: 1px solid #ECECEC;
 }
@@ -146,11 +176,9 @@ hr { /*this is the place to edit that little line by the time thing*/
 }
 
 #comming_soon_sidebar {
-  position:  absolute;
-  width: 200px;
-  height: 300px;
+  position: absolute;
+  width: 215px;
   line-height: 110%;
-  left: 10px;
   top: 180px;
   font-size: 46px;
   text-align: center;
@@ -195,7 +223,7 @@ hr { /*this is the place to edit that little line by the time thing*/
 
 /*buttons:*/
 .buttons .benefits div.button1 {
-  position: absolute;
+  position: fixed;
   width: 125px;
   height: 125px;
   left: 310px;
@@ -211,7 +239,7 @@ hr { /*this is the place to edit that little line by the time thing*/
 }
 
 .buttons .rainwater div.button2 {
-  position: absolute;
+  position: fixed;
   width: 125px;
   height: 125px;
   left: 525px;
@@ -225,7 +253,7 @@ hr { /*this is the place to edit that little line by the time thing*/
 }
 
 .buttons .game div.button4 {
-  position: absolute;
+  position: fixed;
   width: 125px;
   height: 125px;
   left: 740px;
@@ -299,7 +327,7 @@ div.text p.dummy-text{
 
 /*Benefits page buttons*/
 #floodingErosion, #floodingErosionBack{
-  position: absolute;
+  position: fixed;
   width: 256px;
   height: 125px;
   top: 216px;
@@ -313,7 +341,7 @@ div.text p.dummy-text{
 }
 
 #waterDemand, #waterDemandBack{
-  position: absolute;
+  position: fixed;
   width: 256px;
   height: 125px;
   top: 363px;
@@ -328,7 +356,7 @@ div.text p.dummy-text{
 }
 
 #money, #moneyBack{
-  position: absolute;
+  position: fixed;
   width: 256px;
   height: 125px;
   top: 216px;
@@ -342,7 +370,7 @@ div.text p.dummy-text{
 }
 
 #pollution, #pollutionBack{
-  position: absolute;
+  position: fixed;
   width: 256px;
   height: 125px;
   top: 365px;
@@ -355,7 +383,7 @@ div.text p.dummy-text{
   z-index: 2;
 }
 #reduces{
-  position: absolute;
+  position: fixed;
   width: 100px;
   height: 90px;
   left: 0px;
