@@ -80,8 +80,6 @@ hr { /*this is the place to edit that little line by the time thing*/
   height: 37px;
   left: 0px;
   top: 10px;
-
-  background: url(W-Logo_White.png);
 }
 /* The sidebar */
 .sidenav {
@@ -400,8 +398,6 @@ div.text p.dummy-text{
   height: 94px;
   left: 12px;
   top: 8px;
-
-  background: url(money.png);
 }
 
 #flood{
@@ -410,9 +406,6 @@ div.text p.dummy-text{
   height: 85px;
   left: 100px;
   top: 16px;
-
-
-  background: url(flooding-erosion.png);
 }
 
 #demand{
@@ -440,8 +433,6 @@ div.text p.dummy-text{
   height: 99px;
   left: 145px;
   top: 12px;
-
-  background: url(water.png);
 }
 
 #transportation{
@@ -469,8 +460,6 @@ div.text p.dummy-text{
   height: 78px;
   left: 14px;
   top: 25px;
-
-  background: url(pollution-transportation.png);
 }
 
 #floodingErosionBackHead{

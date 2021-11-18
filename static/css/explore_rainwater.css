@@ -56,8 +56,6 @@ hr { /*this is the place to edit that little line by the time thing*/
   height: 37px;
   left: 0px;
   top: 10px;
-
-  background: url(W-Logo_White.png);
 }
 /* The sidebar */
 .sidenav {
@@ -296,8 +294,6 @@ div.buttons div.button1:hover, div.buttons div.button2:hover, div.buttons div.bu
   top:234px;
   bottom:7px;
   right:11px;
-
-  background: url(rainwaterSystem.png);
 }
 
 .arrow{

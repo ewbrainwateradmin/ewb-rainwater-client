@@ -18,30 +18,30 @@
         </div>
     </header>
     <script>
-      function getTimeAndDate() {
-          var currentDate = document.getElementById("date");
-          var currentTime = document.getElementById("time");
-          const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
+        function getTimeAndDate() {
+            var currentDate = document.getElementById("date");
+            var currentTime = document.getElementById("time");
+            const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"]
 
-          var d = new Date();
-          var h = d.getHours();
-          var m = d.getMinutes();
-          var date = monthNames[d.getMonth()] + " " + d.getDate();
-          var am = "AM";
-          if (h > 12) {
-              h = h - 12;
-              var am = "PM";
-          }
-          h = h < 10 ? "0" + h : h;
-          m = m < 10 ? "0" + m : m;
-          currentDate.innerHTML = date;
-          currentTime.innerHTML = h + ":" + m + " " + am;
-      }
-      getTimeAndDate()
-      var interval = setInterval(getTimeAndDate, 1000);
+            var d = new Date();
+            var h = d.getHours();
+            var m = d.getMinutes();
+            var date = monthNames[d.getMonth()] + " " + d.getDate();
+            var am = "AM";
+            if (h > 12) {
+                h = h - 12;
+                var am = "PM";
+            }
+            h = h < 10 ? "0" + h : h;
+            m = m < 10 ? "0" + m : m;
+            currentDate.innerHTML = date;
+            currentTime.innerHTML = h + ":" + m + " " + am;
+        }
+        getTimeAndDate()
+        var interval = setInterval(getTimeAndDate, 1000);
     </script>
     <body>
-      <a href="benefits.html" class="buttons">
+      <a href="benefits" class="buttons">
         <!--Navigation Bar:-->
         <div class="sidenav">
             <p class="sidebar-text" id="top_nav_text">This Building Operates Using Rainwater.</p>
