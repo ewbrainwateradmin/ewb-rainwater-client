@@ -3,6 +3,8 @@ const express = require('express');
 const path = require('path');
 const app = express();
 
+const buttonsFile = require('./static/src/buttons')
+
 // Set static folder
 // for static server, routes end in .html (ie http://localhost:5500/home.html)
 app.use(express.static(path.join(__dirname, 'static')));
@@ -21,6 +23,11 @@ app.get('/benefits',function(req, res){
 })
 
 app.get('/explore_rainwater',function(req, res){
+    res.sendFile(__dirname+'/static/explore_rainwater.html')
+})
+
+app.get('/game',function(req, res){
+    buttonsFile.playGame()
     res.sendFile(__dirname+'/static/explore_rainwater.html')
 })
 

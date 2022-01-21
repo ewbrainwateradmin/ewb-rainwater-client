@@ -1,4 +1,6 @@
+"use strict"
 
+const child_process = require('child_process')
 
 function togglePanel(id,panelId){
   var button = document.getElementById(id);
@@ -64,3 +66,21 @@ function toggleText(id,id2) {
       }
     }
 }
+
+function playGame() {
+  var exec = child_process.exec;
+
+  exec('pwd', (error, stdout, stderr) => {
+    if (error) {
+      console.log(`error: ${error.message}`);
+      return;
+    }
+    if (stderr) {
+      console.log(`stderr: ${stderr}`);
+      return;
+    }
+    console.log(`stdout: ${stdout}`);
+    });
+}
+
+module.exports = {playGame}
