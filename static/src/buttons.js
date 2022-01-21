@@ -1,4 +1,5 @@
-
+"use strict"
+const child_process = require('child_process');
 
 function togglePanel(id,panelId){
   var button = document.getElementById(id);
@@ -6,7 +7,7 @@ function togglePanel(id,panelId){
 
   let buttons = [document.getElementById("catchment"), document.getElementById("daytank"), document.getElementById("treatment"), document.getElementById("cistern"), document.getElementById("flowMeter")];
   let panels = [document.getElementById("catchmentText"), document.getElementById("daytankText"), document.getElementById("treatmentText"), document.getElementById("cisternText"), document.getElementById("flowMeterText")];
-  
+
   if(panel.style.display == "none"){
     panel.style.display = "block";
     //hideButtons(button, buttons);
@@ -25,7 +26,7 @@ function PanelsOff(){
     if (panels[i].style.display != "none") {
 	panels[i].style.display = "none";
 	console.log("test panelsoff");
-    } 
+    }
   }
 }
 
@@ -63,4 +64,20 @@ function toggleText(id,id2) {
         fronts[i].style.display = "block";
       }
     }
+}
+
+function playGame() {
+  var exec = child_process.exec;
+
+  exec('pwd', (error, stdout, stderr) => {
+    if (error) {
+      console.log(`error: ${error.message}`);
+      return;
+    }
+    if (stderr) {
+      console.log(`stderr: ${stderr}`);
+      return;
+    }
+    console.log(`stdout: ${stdout}`);
+    });
 }
