@@ -4,10 +4,27 @@ const path = require('path');
 const app = express();
 
 const buttonsFile = require('./static/src/buttons')
+const getWaterGallons = require('./server/handlers/getWaterGallons')
+const getWaterBottles = require('./server/handlers/getWaterBottles')
+const getWaterDollars = require('./server/handlers/getWaterDollars')
+const update_from_database = require('./server/handlers/update_from_database')
+const database_functions = require('./server/handlers/database_functions')
+
+update_from_database.update()
+setInterval(update_from_database.update, 30*60*1000)
 
 // Set static folder
 // for static server, routes end in .html (ie http://localhost:5500/home.html)
 app.use(express.static(path.join(__dirname, 'static')));
+
+app.get('/current_water_flow', getWaterGallons.getWater)
+app.get('/current_water_bottles', getWaterBottles.getWater)
+app.get('/current_dollars', getWaterDollars.getWater)
+app.get('/water_records', database_functions.selectAll)
+// Format for :start_time and :end_time
+// YYYY-MM-DDThh:mm:ss.000Z
+app.get('/water_records/start/:start_time/end/:end_time', database_functions.selectDate)
+
 
 // set up main page
 app.get('/',function(req, res){
