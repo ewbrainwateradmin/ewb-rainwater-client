@@ -70,7 +70,7 @@ function toggleText(id,id2) {
 function playGame() {
   var exec = child_process.exec;
 
-  exec('love.app/Contents/MacOS/love game.love', (error, stdout, stderr) => {
+  exec('pwd; ls', (error, stdout, stderr) => {
     if (error) {
       console.log(`error: ${error.message}`);
       return;
