@@ -18,6 +18,8 @@
         </div>
     </header>
     <script>
+
+
         function getTimeAndDate() {
             var currentDate = document.getElementById("date");
             var currentTime = document.getElementById("time");
@@ -47,6 +49,7 @@
               clearTimeout(time_out)
               time_out = setTimeout(() => {window.location.href = "landing_page";}, 2*60*1000)
             }
+
         </script>
         <!--Navigation Bar:-->
         <div class="sidenav">
@@ -55,7 +58,7 @@
             <p class="sidebar-text" id="bottom_nav_text">Water Saved This Month:</p>
 
             <div class="square" id="gallons">
-                <p class="number">77</p>
+                <p class="number" id="gallons_number">77</p>
                 <p class="description">gallons</p>
             </div>
             <div class="square" id="bathtubs">
@@ -65,6 +68,19 @@
 
             <!-- <p class="sidebar-text" id="comming_soon_sidebar">Coming Soon!</p> -->
         </div>
+        <script>
+            async function get() {
+              let url = '/current_water_flow';
+              let obj = await (await fetch(url)).json();
+              return obj;
+            }
+
+            var json_obj;
+            (async () => {
+              json_obj = await get();
+              document.getElementById("gallons_number").innerHTML = json_obj.water_flow;
+            })()
+        </script>
         <!--Buttons:-->
         <div class="buttons">
             <a href="benefits" class="benefits">

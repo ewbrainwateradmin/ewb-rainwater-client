@@ -11,7 +11,7 @@ const update_from_database = require('./server/handlers/update_from_database')
 const database_functions = require('./server/handlers/database_functions')
 
 update_from_database.update()
-setInterval(update_from_database.update, 30*60*1000)
+setInterval(update_from_database.update, 10*1000)
 
 // Set static folder
 // for static server, routes end in .html (ie http://localhost:5500/home.html)

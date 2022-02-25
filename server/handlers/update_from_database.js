@@ -10,7 +10,7 @@ function update() {
     var water = Math.floor(500*Math.random())
 
     // Write to text file
-    fs.writeFile(path.resolve(__dirname, "water.txt"), water, (err) => {
+    fs.writeFile(path.resolve(__dirname, "water.txt"), water.toString(), (err) => {
       if (err) throw err
     })
     // Write data to database
