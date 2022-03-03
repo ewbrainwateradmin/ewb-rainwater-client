@@ -7,7 +7,7 @@ const database_functions = require("./database_functions.js")
 function update() {
   try {
     // Get value (replace with database eventually)
-    var water = Math.floor(500*Math.random())
+    var water = Math.floor(500*Math.random()+10000)
 
     // Write to text file
     fs.writeFile(path.resolve(__dirname, "water.txt"), water.toString(), (err) => {

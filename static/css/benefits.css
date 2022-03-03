@@ -174,22 +174,21 @@ hr { /*this is the place to edit that little line by the time thing*/
   color: white;
   margin-top: -5%; /* different from sidebar-text */
   position: relative;
-  top: 15px;
+  top: 35px;
 }
 /* The numbers inside the data square */
 .sidenav div.square p.number {
   font-family: 'Encode Sans', sans-serif;
-  font-size: 80px;
+  font-size: 40px;
   line-height: 110%;
   font-weight: bold;
   text-align: center;
   color: #111;
   margin-top: 0%;
-  top: 200px;
   margin-bottom: 3%;
   color: white;
   position: relative;
-  top: 10px;
+  top: 30px;
 }
 
 /*buttons:*/
