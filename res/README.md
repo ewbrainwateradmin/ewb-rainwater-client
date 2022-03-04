@@ -1,1 +1,0 @@
-**Replace this empty res folder with the provided res folder.**

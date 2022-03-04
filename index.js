@@ -45,7 +45,12 @@ app.get('/explore_rainwater',function(req, res){
 
 app.get('/game',function(req, res){
     buttonsFile.playGame()
-    res.sendFile(__dirname+'/static/explore_rainwater.html')
+    res.sendFile(__dirname+'/static/game.html')
+})
+
+app.get('/static/src/game.js',function(req, res){
+    buttonsFile.playGame()
+    res.sendFile(__dirname+'/static/src/game.js')
 })
 
 const PORT = process.env.PORT || 5500
