@@ -18,6 +18,23 @@
         </div>
     </header>
     <script>
+        async function get() {
+          let url = '/current_water_flow';
+          let obj = await (await fetch(url)).json();
+          return obj;
+        }
+
+        var json_obj;
+        function updateNumber(){
+          (async () => {
+            json_obj = await get();
+            document.getElementById("gallons_number").innerHTML = json_obj.water_flow;
+          })()
+        }
+        updateNumber();
+        var interval = setInterval(updateNumber, 1000)
+    </script>
+    <script>
         function getTimeAndDate() {
             var currentDate = document.getElementById("date");
             var currentTime = document.getElementById("time");
@@ -47,24 +64,29 @@
               clearTimeout(time_out)
               time_out = setTimeout(() => {window.location.href = "landing_page";}, 2*60*1000)
             }
+
         </script>
         <!--Navigation Bar:-->
         <div class="sidenav">
             <p class="sidebar-text" id="top_nav_text">This Building Operates Using Rainwater.</p>
             <hr id="nav_hr">
             <p class="sidebar-text" id="bottom_nav_text">Water Saved This Month:</p>
-            <!--
+
             <div class="square" id="gallons">
-                <p class="number">77</p>
+                <p class="number" id="gallons_number">77</p>
+                <!-- <svg viewbox='0 0 50 50'>
+                  <text x='0' y='15' class="number" id="gallons_number">77</text>
+                </svg> -->
                 <p class="description">gallons</p>
             </div>
             <div class="square" id="bathtubs">
                 <p class="number">1.8</p>
                 <p class="description">bathtubs</p>
             </div>
-            -->
-            <p class="sidebar-text" id="comming_soon_sidebar">Coming Soon!</p>
+
+            <!-- <p class="sidebar-text" id="comming_soon_sidebar">Coming Soon!</p> -->
         </div>
+
         <!--Buttons:-->
         <div class="buttons">
             <a href="benefits" class="benefits">
@@ -79,12 +101,12 @@
                     <p class="description">explore the rainwater system</p>
                 </div>
             </a>
-            <a href="benefits" class="game">
+            <a href="game" class="game">
                 <div class="button4">
                     <p class="tapTo">rainwater game</p>
                     <p class="description">Will be coming soon!</p>
                 </div>
-            </a>
+          </a>
         </div>
         <button onclick="toggleText('floodingErosion', 'floodingErosionBack')" id="floodingErosion">
             <p id="reduces">reduces flooding & erosion</p>
