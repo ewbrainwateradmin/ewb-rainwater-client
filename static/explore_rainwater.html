@@ -69,7 +69,7 @@
         </div>
         <!--Buttons:-->
         <div class="buttons">
-            <a href="benefits" class="benefits">
+            <a href="benefits" class="benefits" id="benefits_button">
                 <div class="button1">
                     <p class="tapTo">tap to</p>
                     <p class="description">learn about the benefits</p>
@@ -88,93 +88,104 @@
                 </div>
             </a>
         </div>
-    <!--Rainwater System-->
-    <img class="rainwaterSystem" src="images/rainwaterSystem.png" alt="rainwater">
-    <!--Catchment button-->
-    <div id="catchment" onclick="togglePanel('catchment', 'catchmentText')" style="display: block">
+        <!--Rainwater System-->
+        <img class="rainwaterSystem" src="images/rainwaterSystem.png" alt="rainwater">
+        <!--Catchment button-->
+        <div id="catchment" onclick="togglePanel('catchment', 'catchmentText')" style="display: block">
 
-    </div>
-    <!--Catchment panel-->
-    <div id="catchmentText" style="display: none">
-        <p id="catchmentHeader">
-            catchment system
-        </p>
-        <div id="arrow1">
-            <img class="arrow" src="images/arrow.png" alt="arrow">
+        </div>
+        <!--Catchment panel-->
+        <div id="catchmentText" style="display: none">
+            <p id="catchmentHeader">
+                catchment system
+            </p>
+            <div id="arrow1">
+                <img class="arrow" src="images/arrow.png" alt="arrow">
+            </div>
+
+            <p id="catchmentBody">
+                Storm drains on the roof of the building have sufficient water diverted to the rainwater cistern to be used for rainwater filtration.
+                The rest is diverted to the city waste system, connected under the building.
+            </p>
+        </div>
+        <!--Daytank button-->
+        <div id="daytank" onclick="togglePanel('daytank', 'daytankText')" style="display: block">
+
+        </div>
+        <!--Daytank panel-->
+        <div id="daytankText" style="display: none">
+            <p id="daytankHeader">
+                day tank
+            </p>
+            <div id="arrow2">
+                <img class="arrow" src="images/arrow.png" alt="arrow">
+            </div>
+            <p id="daytankBody">
+                Stores water after the filtration skid and before it is sent to the toilets in the building. It acts as an inbetween container from the water filtration and the distribution to the rest of the buildings
+            </p>
+        </div>
+        <!--treatment button-->
+        <div id="treatment" onclick="togglePanel('treatment', 'treatmentText')" style="display: block">
+
+        </div>
+        <!--treatment panel-->
+        <div id="treatmentText" style="display: none">
+            <p id="treatmentHeader">
+                treatment skid
+            </p>
+            <div id="arrow3">
+                <img class="arrow" src="images/arrow.png" alt="arrow">
+            </div>
+            <p id="treatmentBody">
+                Removes smaller particles from the water after it is taken from the cistern to be used throughout the building.
+            </p>
         </div>
 
-        <p id="catchmentBody">
-            Storm drains on the roof of the building have sufficient water diverted to the rainwater cistern to be used for rainwater filtration.
-            The rest is diverted to the city waste system, connected under the building.
-        </p>
-    </div>
-    <!--Daytank button-->
-    <div id="daytank" onclick="togglePanel('daytank', 'daytankText')" style="display: block">
+        <!--cistern button-->
+        <div id="cistern" onclick="togglePanel('cistern', 'cisternText')" style="display: block">
 
-    </div>
-    <!--Daytank panel-->
-    <div id="daytankText" style="display: none">
-        <p id="daytankHeader">
-            day tank
-        </p>
-        <div id="arrow2">
-            <img class="arrow" src="images/arrow.png" alt="arrow">
         </div>
-        <p id="daytankBody">
-            Stores water after the filtration skid and before it is sent to the toilets in the building. It acts as an inbetween container from the water filtration and the distribution to the rest of the buildings
-        </p>
-    </div>
-    <!--treatment button-->
-    <div id="treatment" onclick="togglePanel('treatment', 'treatmentText')" style="display: block">
 
-    </div>
-    <!--treatment panel-->
-    <div id="treatmentText" style="display: none">
-        <p id="treatmentHeader">
-            treatment skid
-        </p>
-        <div id="arrow3">
-            <img class="arrow" src="images/arrow.png" alt="arrow">
+        <!--cistern panel-->
+        <div id="cisternText" style="display: none">
+            <p id="cisternHeader">
+                cistern
+            </p>
+            <div id="arrow4">
+                <img class="arrow" src="images/arrow.png" alt="arrow">
+            </div>
+            <p id="cisternBody">
+                Stores 50,000 gallons of rainwater before filtration. The cistern acts as a container for pre-filtered water after collection on the roof.
+            </p>
         </div>
-        <p id="treatmentBody">
-            Removes smaller particles from the water after it is taken from the cistern to be used throughout the building.
-        </p>
-    </div>
 
-    <!--cistern button-->
-    <div id="cistern" onclick="togglePanel('cistern', 'cisternText')" style="display: block">
+        <!--flow meter button-->
+        <div id="flowMeter" onclick="togglePanel('flowMeter', 'flowMeterText')">
 
-    </div>
-
-    <!--cistern panel-->
-    <div id="cisternText" style="display: none">
-        <p id="cisternHeader">
-            cistern
-        </p>
-        <div id="arrow4">
-            <img class="arrow" src="images/arrow.png" alt="arrow">
         </div>
-        <p id="cisternBody">
-            Stores 50,000 gallons of rainwater before filtration. The cistern acts as a container for pre-filtered water after collection on the roof.
-        </p>
-    </div>
 
-    <!--flow meter button-->
-    <div id="flowMeter" onclick="togglePanel('flowMeter', 'flowMeterText')">
-
-    </div>
-
-    <!--flow meter panel-->
-    <div id="flowMeterText" style="display: none">
-        <p id="flowMeterHeader">
-            flow meter
-        </p>
-        <div id="arrow5">
-            <img class="arrow" src="images/arrow.png" alt="arrow">
+        <!--flow meter panel-->
+        <div id="flowMeterText" style="display: none">
+            <p id="flowMeterHeader">
+                flow meter
+            </p>
+            <div id="arrow5">
+                <img class="arrow" src="images/arrow.png" alt="arrow">
+            </div>
+            <p id="flowMeterBody">
+                Measures the flow of water through a pipe. An impeller turns as water flows through it, causing the flow meter to emit a signal that can be used to determine the flow rate.
+            </p>
         </div>
-        <p id="flowMeterBody">
-            Measures the flow of water through a pipe. An impeller turns as water flows through it, causing the flow meter to emit a signal that can be used to determine the flow rate.
-        </p>
-    </div>
-
+    </body>
+    <script>
+        var benefits_button = document.getElementById("benefits_button");
+        benefits_button.href = "javascript:void(0)";
+        console.log("link off")
+        function func(){
+          var benefits_button = document.getElementById("benefits_button");
+          benefits_button.href = "benefits";
+          console.log("link on")
+        }
+        setTimeout(func, 2500);
+    </script>
 </html>

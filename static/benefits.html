@@ -95,13 +95,13 @@
                     <p class="description">learn about the benefits</p>
                 </div>
             </a>
-            <a href="explore_rainwater" class="rainwater">
+            <a href="explore_rainwater" class="rainwater" id="rainwater_button">
                 <div class="button2">
                     <p class="tapTo">tap to</p>
                     <p class="description">explore the rainwater system</p>
                 </div>
             </a>
-            <a href="game" class="game">
+            <a href="benefits" class="game">
                 <div class="button4">
                     <p class="tapTo">rainwater game</p>
                     <p class="description">Will be coming soon!</p>
@@ -151,4 +151,15 @@
         </button>
         <div data-router-outlet></div>
     </body>
+    <script>
+        var rainwater_button = document.getElementById("rainwater_button");
+        rainwater_button.href = "javascript:void(0)";
+        console.log("link off")
+        function func(){
+          var rainwater_button = document.getElementById("rainwater_button");
+          rainwater_button.href = "explore_rainwater";
+          console.log("link on")
+        }
+        setTimeout(func, 2500);
+    </script>
 </html>
