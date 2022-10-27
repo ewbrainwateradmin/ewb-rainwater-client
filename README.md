@@ -3,4 +3,4 @@ This is the repository for the UW Engineers Without Borders. Here we will be wor
 
 
 Link to Figma Design Page
-https://www.figma.com/file/bu5Oan0bKzs3QsdBsHlbPW/EWB?node-id=28%3A0
+https://www.figma.com/file/jFXjPNImRJpExUztEfXNQ5/EWB-(Copy)?node-id=28%3A0
