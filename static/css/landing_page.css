@@ -3,6 +3,39 @@ html {
   zoom: 2;
 }
 
+@keyframes pulse {
+  from {
+    z-index: 4;
+    width: 500px;
+    height: 120px;
+    border-radius: 50px;
+    background-color: #ff9b00;
+    position: absolute;
+    top: 300px;
+    left: 120px;
+    box-shadow: 0px 0px 7.5px 7.5px rgba(227, 119, 58, 0.7);
+  }
+  to {
+    z-index: 4;
+    width: 600px;
+    height: 180px;
+    border-radius: 50px;
+    background-color: #f8b54e;
+    position: absolute;
+    top: 270px;
+    left: 70px;
+    box-shadow: 0px 0px 15px 15px rgba(216, 134, 87, 0.25);
+  }
+}
+
+#fake_button {
+  animation-name: pulse;
+  animation-duration: 1.5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+  animation-timing-function: ease-out;
+}
+
 .header {
   position: fixed;
   text-align: center;
