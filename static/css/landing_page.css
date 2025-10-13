@@ -60,7 +60,7 @@ html {
 h1 { /*come back and look at the fonts here*/
   position: absolute;
   text-align: left;
-  width: 180px;
+  width: 181px;
   left: 70px;
   top: 0%;
 
@@ -111,7 +111,7 @@ h2 {
   position: absolute;
   width: 56px;
   height: 37px;
-  left: 0px;
+  left: 5px;
   top: 10px;
 }
 

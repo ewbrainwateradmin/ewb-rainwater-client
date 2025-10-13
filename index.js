@@ -28,11 +28,12 @@ app.get('/water_records/start/:start_time/end/:end_time', database_functions.sel
 
 // set up main page
 app.get('/',function(req, res){
-    res.sendFile(__dirname+'/static/landing_page.html')
+    // serve the updated landing page
+    res.sendFile(__dirname+'/static/landing_page_new.html')
 })
 
 app.get('/landing_page',function(req, res){
-    res.sendFile(__dirname+'/static/landing_page.html')
+    res.sendFile(__dirname+'/static/landing_page_new.html')
 })
 
 app.get('/benefits',function(req, res){
