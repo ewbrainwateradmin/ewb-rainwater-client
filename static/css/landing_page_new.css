@@ -1,6 +1,7 @@
 :root {
     --header-height: clamp(42px, 15vh, 100px);
     --visual-width: min(700px, 900px);
+    --ui-scale: 1.4;
     --bubble-font-min: 0.8rem;
     --bubble-font-vw: 1.5vw;
     --bubble-font-max: 1.5rem;
@@ -66,7 +67,7 @@ h1 {
     margin: 20px;
     color: #FFFFFF;
     font-weight: 900;
-    font-size: clamp(16px, calc(var(--header-height) * 0.30), 45px);
+    font-size: calc(clamp(16px, calc(var(--header-height) * 0.30), 45px) * var(--ui-scale));
     line-height: 1.05;
     flex: 0 1 auto;
     text-align: left;
@@ -112,8 +113,8 @@ main {
 .stacked-words span { display: block; line-height: 0.95; }
 .stacked-words { line-height: 0.95; }
 
-.additional-content h2 { font-size: 50px; font-weight: 600; }
-.additional-content h3 { font-size: 150px; font-weight: 900; letter-spacing: 6px; }
+.additional-content h2 { font-size: calc(50px * var(--ui-scale)); font-weight: 600; }
+.additional-content h3 { font-size: calc(150px * var(--ui-scale)); font-weight: 900; letter-spacing: calc(6px * var(--ui-scale)); }
 .additional-content {
     margin-top: calc(var(--header-height) * 4);
 }
@@ -126,7 +127,11 @@ main {
     top: calc(var(--header-height) + 5px);
     position: relative;
     display: inline-block;
-    width: var(--visual-width);
+    width: calc(var(--visual-width) * var(--ui-scale));
+     --arrow-left-base: 98%;
+     --arrow-left-adjust: -12.5%;
+     --arrow-top-base: 89%;
+     --arrow-top-adjust: -10%;
     right: 0%;
 }
 
@@ -137,7 +142,7 @@ main {
 }
 
 .sun {
-    --sun-size: clamp(60px, 10vw, 160px);
+    --sun-size: calc(clamp(60px, 10vw, 160px) * var(--ui-scale));
     --sun-ray-color: rgba(255,255,255,0.98);
     --sun-ray-alpha: 0.98;
     --sun-halo-inner: 0.32;
@@ -205,18 +210,53 @@ main {
     .brand-title { font-size: 16px; }
 }
 
-
 .visuals .arrow {
     position: absolute;
-    left: 98%;
-    top: 89%;
-    width: 12%;
-    max-width: 8rem;
+    left: calc(var(--arrow-left-base) + (var(--ui-scale) - 1) * var(--arrow-left-adjust));
+    top: calc(var(--arrow-top-base) + (var(--ui-scale) - 1) * var(--arrow-top-adjust));
+    width: calc(12% * var(--ui-scale));
+    max-width: calc(8rem * var(--ui-scale));
     height: auto;
     pointer-events: none;
     z-index: 3;
     transform-origin: center center;
     transform: translate(-50%, -50%);
+}
+
+.visuals .arrow.swing {
+    animation: arrow-swing 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes arrow-swing {
+    from { transform: translate(-50%, -50%) translateX(-6%) rotate(-6deg); }
+    to   { transform: translate(-50%, -50%) translateX(6%) rotate(6deg); }
+}
+
+.visuals .arrow.swing-notilt {
+    animation: arrow-swing-notilt 1.2s ease-in-out infinite alternate;
+}
+
+@keyframes arrow-swing-notilt {
+    from { transform: translate(-50%, -50%) translateX(-6%) rotate(0deg); }
+    to   { transform: translate(-50%, -50%) translateX(6%) rotate(0deg); }
+}
+
+.visuals .arrow.pulse {
+    animation: arrow-pulse 1.6s cubic-bezier(.4,0,.2,1) infinite;
+}
+
+@keyframes arrow-pulse {
+    0%   { transform: translate(-50%, -50%) scale(1); }
+    50%  { transform: translate(-50%, -50%) scale(1.14); }
+    100% { transform: translate(-50%, -50%) scale(1); }
+}
+
+.visuals .arrow.swing:focus, .visuals .arrow.pulse:focus {
+    animation-duration: 0.6s;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .visuals .arrow.pulse { animation: none; }
 }
 
 .visuals .speech_bubble {
@@ -270,7 +310,7 @@ main {
     justify-content: center;
     margin: 0;
     padding: 0.5rem;
-    font-size: clamp(var(--bubble-font-min), var(--bubble-font-vw), var(--bubble-font-max));
+    font-size: calc(clamp(var(--bubble-font-min), var(--bubble-font-vw), var(--bubble-font-max)) * var(--ui-scale));
     color: #159BE3;
     text-align: center;
     pointer-events: none;
@@ -285,7 +325,7 @@ main {
 
 
 @media (max-width: 420px) {
-    .visuals .bubble-wrap .water-droplet-words { font-size: clamp(var(--bubble-font-min), 3.5vw, var(--bubble-font-max)); transform: translate(5%,-8%) rotate(33deg); }
+    .visuals .bubble-wrap .water-droplet-words { font-size: calc(clamp(var(--bubble-font-min), 3.5vw, var(--bubble-font-max)) * var(--ui-scale)); transform: translate(5%,-8%) rotate(33deg); }
 }
 
 @media (max-width: 420px) {
@@ -337,10 +377,10 @@ h3 {
 #clouds .cloud {
     --cloud-width-vw: 11vw;
     --cloud-max-w: 150px;
-    width: var(--cloud-width-vw);
-    max-width: calc(var(--cloud-max-w) + 5%);
+    width: calc(var(--cloud-width-vw) * var(--ui-scale));
+    max-width: calc((var(--cloud-max-w) * var(--ui-scale)) + 5%);
     opacity: 0.85;
-    filter: drop-shadow(0 6px 8px rgba(0,0,0,0.08));
+    filter: drop-shadow(0 calc(6px * var(--ui-scale)) calc(8px * var(--ui-scale)) rgba(0,0,0,0.08));
     transform: translateY(var(--cloud-offset-y, 0));
 }
 
